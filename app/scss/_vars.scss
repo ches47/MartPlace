@@ -3,6 +3,7 @@ $gray: #333333;
 $medium-gray: #8797a7;
 $light-gray: #d9dfe5;
 $turq: #3c6490;
+$light-blue: #0674ec;
 $blue: #294dcf;
 $green: #62d03b;
 $orange: #feb71d;
@@ -11,7 +12,7 @@ $violet: #7347c1;
 
 
 @mixin f500 {
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Quicksand', sans- serif;
     font-weight: 400;
 }
 
@@ -19,3 +20,4 @@ $violet: #7347c1;
     font-family: 'Quicksand', sans-serif;
     font-weight: 700;
 }
+

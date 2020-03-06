@@ -2,7 +2,7 @@
 @import '_global';
 @import '_fonts';
 
-
+//header
 .header__top {
     width: 100%;
     background-color: #e0e3e6;
@@ -20,7 +20,7 @@
     width: 570px;
     position: relative;
     .header__btn{
-        background-color: $blue;
+        background-color: $light-blue;
         margin-top: 5px;
         padding-top: 12px;
         padding-bottom: 12px;
@@ -67,7 +67,7 @@
     }
     .header__basket {
         span {
-            background-color: $blue;
+            background-color: $light-blue;
         }
     }
 }
@@ -84,7 +84,7 @@
         color: #000;  
     }
     &-bucks {
-        color: $blue;
+        color: $light-blue;
     }
     &-data {
         width: 105px;
@@ -143,7 +143,7 @@
         right: -42px;
         width: 70px;
         height: 41px;
-        background-color: $blue;
+        background-color: $light-blue;
         border-radius: 40px;
         border: none;
     }
@@ -154,11 +154,381 @@
 }
 
 .header__inner {
+//    При адпатаации игарй с эти рамзерами
     width: 100%;
+    min-width: 1200px;
     height: 730px;
     background-color: $blue;
     color: #fff;
+    margin-bottom: 100px; 
 }
+
+.header__inner-info {
+    padding: 150px 50px;
+
+    width: 100%;
+    
+}
+
+.header__inner-title {
+    width: 1000px;
+    font-size: 60px;
+    line-height: 70px;
+    text-align: center;
+    margin-bottom: 70px;
+    
+    span {
+        @include f700;
+        
+    }
+    p {
+        font-size: 18px;
+    }
+}
+
+.header__inner-buttons {
+    padding-left: 300px;
+    display: block;
+    button:first-child {
+        margin-left: 0;
+    }
+    button {
+        
+        transition: all .5s;
+        width: 220px;
+        height: 51px;
+        cursor: pointer;
+        background-color: $blue;
+        border-radius: 40px;
+        border: none;
+        color: #fff;
+        margin-left: 30px;
+        border: 1px solid #fff; 
+    &:hover {
+        background-color: #fff;
+        color: $light-blue;
+    }
+  }
+}
+
+.header__block-first {
+    max-width: 1080px;
+    width: 100%;
+    height: 100px;
+    background-color: rgba(144, 162, 226, 0.75);
+    border-radius: 6px;
+    position: relative;
+}
+.header__block-second{
+    min-width: 1120px;
+    
+    height: 100px;
+    background-color: rgba(144, 162, 226, .65);
+    border-radius: 6px;
+    
+    position: absolute;
+    top: 10px;
+    right: -20px;
+}
+
+.header__block-third {
+    min-width: 1150px;
+    
+    height: 100px;
+    background-color: #fff;
+    box-shadow: 0px 1px 10px 0px rgba(172,179,186,1.75);
+    border-radius: 6px;
+    
+    position: absolute;
+    top: 15px;
+    right: -20px;
+}
+
+.header__block{ 
+    padding: 30px;
+    color: $text;
+    .header__block-search {
+        display: block;
+        position: relative;
+    }
+    input {
+        width: 650px;
+        padding: 10px 35px; 
+        border: 1px solid $light-gray;
+        border-radius: 5px;
+    }
+    .header__block-category {
+        position: absolute;
+        bottom: -1px;
+        right: 245px;
+        border-radius: 5px;
+        width: 200px;
+        border: 1px solid $light-gray;
+        padding: 8px 35px; 
+        border-left: none;
+    }
+    a {
+        position: relative;
+    
+    &::before {
+        content: '\ea43';
+        font-family: 'icomoon';
+        position: absolute;
+        top: -17px;
+        left: 27px;
+        font-size: 14px;
+    }
+  } 
+  &-button {
+      width: 220px;
+      border: 1px solid $light-gray;
+      padding: 10px 35px; 
+      border-radius: 5px; 
+      position: absolute;
+      bottom: 30px;
+      right: 25px;
+      
+      color: #fff;
+      background-color: $light-blue;
+      
+      &:hover {
+          color: #abb3cf;
+          transition: 0.5s;
+      }
+   }      
+}
+
+///choose-foxtar
+.choose {
+    &-foxtar {
+        padding: 80px 0;
+        background-color: #fff;    
+    }
+    &-items {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 30px;
+    }
+    &-item {
+        width: 420px;
+        height: 383px;
+        text-align: center;
+        padding-right: 11px;
+        padding-top: 40px; 
+        &:hover {
+            box-shadow: 0px 3px 35px 10px #acb3ba;
+            transition: .8s;
+        }
+    }
+    
+    &-sentence {
+        padding-bottom: 30px;
+        font-size: 21px;
+        font-weight: 500;
+        padding-top: 20px;
+    }
+    &-text {
+       padding-left: 21px ;
+    }
+  
+}
+
+//weekly-products
+.weekly-products {
+    background-color: $light-gray;
+    padding: 120px 0;
+}
+
+.weekly__wrapper {
+    max-width: 1920px;
+}
+
+.weekly__title {
+    height: 75px;
+    background-color: #fff;
+    position: relative;
+    &-arrows {
+        position: absolute;
+        top: 20px;
+        right: 30px; 
+        background-color: $violet;
+        border-radius: 20px;
+        width: 75px;
+        height: 30px;
+        border: none;
+        
+       } 
+    &-chevron {
+        color: $light-gray;
+        font-size: 14px;
+        position: relative;
+    }
+    &-left {
+        position: absolute;
+        top: 8px;
+        left: 16px;   
+    }
+    &-right {
+        position: absolute;
+        top: 8px;
+        right: 14px;
+    }
+}
+    
+.title {
+    font-size: 30px;
+    padding: 25px 30px;
+
+}
+
+.weekly__inner-box {
+    position: relative;
+}
+
+.weekly__inner {
+    padding-top: 50px;
+    &-box {
+        height: 450px;
+        background-color: #fff;
+    }
+    &-img {
+        background-color: $medium-gray;
+        max-width: 550px;
+        width: 100%;  
+        height: 450px; 
+        position: relative;
+        button {
+            display: none;   
+        }
+    &:hover {
+        
+        background: linear-gradient(to top right, #8E2DE2, #4A00E0);
+        button {
+             display: inline-block;
+             width: 120px;
+             border: 1px solid #fff;
+             padding: 10px 35px; 
+             margin-right: 10px;
+             border-radius: 19px; 
+             color: #fff;
+             background: $blue;
+             cursor: pointer;
+             font-size: 17px;
+             transition: 0.6s;
+        }
+     }  
+  }
+}
+
+button.button-info {
+    position: absolute;
+    top: 220px;
+    left: 150px;
+    
+    &:hover {
+        color: $blue;
+        background-color: #fff ;
+    }
+}
+
+button.button-demo {
+    position: absolute;
+    top: 220px;
+    right: 130px;
+    &:hover {
+        color: $blue;
+        background-color: #fff;
+    }
+}
+
+.weekly__inner {
+    position: relative;
+    &-content {
+        padding: 40px 0 25px;
+        width: 500px;
+        
+        position: absolute;
+        top: 10px;
+        right: 35px;
+    }
+    &-title {
+        font-size: 21px;
+        @include f700;  
+        padding-bottom: 17px;
+    }  
+}
+
+.weekly__info {
+       padding-right: 10px; 
+       padding-bottom: 20px;
+       position: relative;
+    &-block {  
+        position: absolute;
+        top: 3px;
+        left: 39px;
+    }
+    &-name {
+        color: #000;
+        font-size: 15px;
+        @include f700; 
+    }
+    &-icon {
+        color: $violet;
+        padding: 0 10px;
+        &::before {
+            padding-right: 10px;    
+        } 
+    }
+    &-text {
+        font-size: 17px;
+        padding-bottom: 30px;
+    }
+    &-buttons {
+        padding-bottom: 40px;
+        border-bottom: 1px solid $light-gray;
+    }
+    &-button {
+        border: none;
+        background-color: $light-gray;
+        padding: 8px;
+        border-radius: 11px;
+        cursor: pointer;
+        margin-right: 7px;  
+    }
+}
+
+.weekly__item {
+    padding-top: 25px;
+    display: flex;
+    
+    &-money {
+        padding: 3px 16px;
+        background-color: $light-blue;
+        border-radius: 13px;
+        color: #fff;
+        margin-right: 20px;
+    }
+    &-like {
+        padding-top: 7px;
+        padding-right: 20px;
+        color: $light-blue;
+        span {
+            color: $medium-gray;
+        }
+    }
+    &-busket {
+        padding-top: 7px;
+        padding-right: 20px;
+        color: $medium-gray;
+    }
+    &-star {
+        position: absolute;
+        right: 0;
+        padding-top: 9px;
+        
+    }
+}
+
 
 
 
