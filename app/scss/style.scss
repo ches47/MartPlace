@@ -1056,7 +1056,7 @@ button.button-demo {
 
 .clients__reviews {
     padding-bottom: 75px;
-    padding-top: 130px;
+    padding-top: 100px;
     position: relative;
     button {
         position: absolute;
@@ -1073,8 +1073,230 @@ button.button-demo {
   }
 }
 
-    
 
+//latest-news
+.latest-news {
+    background-color: $light-gray;
+}
+.latest {
+    padding-top: 100px;
+
+    &__block {
+        width: 361px;
+        padding-bottom: 115px;
+    }
+    &__info {   
+        height: 220px;
+        background-color: #fff;
+        padding: 20px;
+        &-title {
+            @include f700
+            font-size: 21px;   
+            padding-bottom: 20px;
+        }
+        &-text {
+            font-size: 16px;
+            padding-bottom: 20px;
+        }
+    }
+}
+
+.latest-blocks {
+    display: flex;
+    justify-content: center;
+   
+}
+.latest__block {
+     margin-right: 25px;
+}
+
+.latest__static {
+    height: 60px;
+    background-color: #fff;
+    margin-top: 1px;
+    padding: 20px 30px;
+    position: relative;
+    color: $medium-gray;
+    &-clock {
+        color: $light-blue;
+        span {
+            color: $medium-gray;
+        }
+    }
+    &-user {
+       display: flex;
+       position: absolute;
+       top: 10px;
+       right: 10px;
+       padding: 10px 30px;
+       border-left: 1px solid $light-gray;
+    }
+    &-comment {
+        padding-right: 10px;
+    }
+}
+
+//support
+.support {
+    background-color: white;
+
+}
+.support__guarentee {
+        height: 300px;
+        padding-top: 45px;
+        padding-bottom: 45px;
+        text-align: center;
+        display: flex;
+        justify-content: space-around;
+    &-img {
+        padding-bottom: 20px;
+    }
+    &-text {
+        font-size: 24px;
+    }
+    span {
+        color: $light-blue;
+    }
+    .violet {
+        color: $violet;
+    }
+}
+
+    
+///join-our
+.join-our {
+    background: linear-gradient(to top right, #8E2DE2, #4A00E0);;
+    height: 400px;
+}
+.ready__join {
+    color: #fff;
+    padding-top: 100px;
+    text-align: center;
+    &-title {
+        font-size: 35px;
+        padding-bottom: 25px;
+    }
+    &-text{
+        font-size: 18px;
+        padding-bottom: 50px;
+    }
+    &-btn {
+        margin-right: 10px;
+        border-radius: 28px;
+        border: none;
+        width: 195px;
+        height: 60px;
+        background-color: #fff;
+        color: $light-blue;
+        cursor: pointer;
+        &:hover {
+            background-color: $blue;
+            color:  #fff; 
+            transition: .5s;
+        }
+     }
+}
+
+//footer
+footer {
+    height: 525px;
+    background-color: #262b30;
+}
+.footer__copy {
+    margin-top: -7px;
+    height: 95px;
+    background-color: $blacky;
+    text-align: center;
+    &-text {
+        padding-top: 35px;
+        color: $light-gray;
+        span {
+            color: #fff;
+        }
+    } 
+}
+
+.footer__inner {
+    color: $light-gray;
+    padding: 110px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.footer__col {
+    max-width: 270px;
+    width: 100%;
+    &-text {
+        padding-top: 30px;
+        padding-bottom: 20px;
+        line-height: 28px;
+    }
+}
+.footer__info {
+    
+    &-icon {
+        color: $light-gray;
+        font-size: 18px;
+        line-height: 32px;
+    }
+}
+
+.footer__col-menu {
+    max-width: 200px;
+    margin-left: 50px;
+}
+.footer__col {
+    &-title {
+        color: #fff;
+        font-size: 18px;
+        padding-bottom: 50px;
+  }
+    &-list a {
+        line-height: 34px;
+        color: $light-gray;
+    }
+
+}
+
+.footer__col-social {
+    max-width: 370px;
+    form {
+       position: relative; 
+        input {
+            display: block;
+            width: 290px; 
+            padding: 20px 0;
+            padding-left: 25px;
+            border-radius: 70px;
+            height: 50px;
+            font-size: 15px;
+            border: none;
+            
+    }
+        button {
+        position: absolute;
+        top: 0;
+        right: 10px;    
+        width: 111px;
+        color: #fff;
+        height: 50px;
+        background-color: $light-blue;
+        border-radius: 40px;
+        border: none;
+    }
+  }
+}
+.footer__col-subscribe {
+    line-height: 32px;
+    padding-bottom: 20px;
+}
+
+.footer__social-link {
+    display: flex; 
+    padding-top: 50px;
+    li {
+      padding-right: 15px;
+    }
+}
 
 
 
