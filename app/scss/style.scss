@@ -1437,6 +1437,11 @@ footer {
     &__block {
         margin-top: -20px;
     }
+    &__arrows {
+        padding-top: 40px;
+        padding-bottom: 110px;
+        
+    }
 }
 .product-page__inner {
     padding-top: 50px;
@@ -1612,7 +1617,38 @@ footer {
 }
 
 
-
+.page__arrows-block {
+    button {
+        
+        width: 51px;
+        height: 37px;
+        background-color: #fff;
+        border-radius: 40px;
+        border: none;    
+        color: #000;
+           &:hover {
+            color: #fff;
+            background: $light-blue;
+            transition: .5s;
+         }
+    }
+    .icon {
+        margin-right: 20px;
+        &:hover {
+            color: #fff;
+            background: $violet;
+            transition: .5s;
+            }
+    }
+    .icon-right {
+        margin-left: 20px;
+        padding-left: 14px;
+        &:hover {
+            color: #fff;
+            background: $violet;
+        }
+    }
+}
 
 
 
