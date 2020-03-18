@@ -824,6 +824,11 @@ button.button-demo {
     display: none;
 }
 
+.product__block
+.product__desc-texting {
+    display: block;
+    padding-bottom: 30px;
+}
 
 .product__item {
     padding-top: 25px;
@@ -2033,6 +2038,7 @@ footer {
     background-color: #fff;
     padding: 30px;
     font-size: 17px;
+    margin-bottom: 30px;
     .aside__sale-basket {
         display: flex;
         justify-content: space-between;
@@ -2099,8 +2105,90 @@ footer {
     }
 }
 
+.aside__inform {
+    background-color: #fff;
+    border: 1px solid #dedede;
+    padding: 0 30px 30px;
+    
+    width: 365px;
+    margin-bottom: 30px;
+    &-title {
+        text-align: center;
+        border-bottom: 1px solid #dde3e8;
+        font-size: 20px;
+        color: #263238;
+        padding: 22px 0 19px;
+        font-family: 'Roboto', sans-serif;
+        @include f700;
+        margin-bottom: 20px;
+    }
+    .information__line {
+        display: flex;
+        padding-bottom: 20px;
+        &-title {
+            @include f700; 
+            width: 160px;
+        }
+        &-details {
+            width: 170px;
+            color: $text;
+            a {
+                color: $light-blue;
+            }
+        }
+    }
+}
 
+.aside__author {
+    background-color: #fff;
+    border: 1px solid #dedede;
+    padding: 0 30px 30px;
+    text-align: center;
+    width: 365px;
+    margin-bottom: 30px;
+    &-name {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        @include f700;
+        font-size: 18px;
+    }
+    &-sign {
+        color: $text;
+    }
+    &-social ul{
+        display: flex;
+        justify-content: center;
+        padding-top: 20px;
+        padding-bottom: 25px;
+        li {
+           padding-right: 10px;    
+        }
+    }
+    &-buttons {
+        padding-bottom: 10px;
+        button {
+            width: 140px;
+            height: 45px;
+            background-color: $light-blue;
+            border-radius: 40px;
+            border: none;
+            cursor: pointer;
+            color: #fff;
+            margin-right: 9px;
+            
+            &:hover {
+                 background-color: $violet;
+                transition: .5s;
+            }
+        }
+    }
 
+}
 
-
+//more-items
+.more-items {
+    padding-top: 100px;
+    padding-bottom: 10px;
+    background-color: $thin-gray;
+}
 
