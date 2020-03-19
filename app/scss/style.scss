@@ -1775,7 +1775,6 @@ footer {
             span{
                 color: $light-gray;
             }
-
         }
         &__name {
             font-size: 30px;
@@ -1783,6 +1782,34 @@ footer {
         }
     }
 }
+
+//author-sell Block
+.author-sell {
+    height: 280px;
+}
+
+.author-works {
+    text-align: center;
+    line-height: 60px;
+    &__title {
+        font-size: 30px;
+        @include f700;
+    }
+    &__sell {
+        font-size: 30px;
+        padding-bottom: 30px;
+    }
+    &__home {
+        
+        span {
+            color: $light-gray;
+        }
+    }
+}
+
+
+
+
 
 //product-one
 .product-one {
@@ -2338,11 +2365,59 @@ footer {
     }
 }
 
+//create-work
+.create-work {
+    height: 550px;
+    background-color: #fff;
+}
 
+.upload-products {
+    background-color: $light-gray;
+}
 
+.create-free {
+    display: flex;
+    padding-top: 95px;
+    
+    &__about {
+        padding-top: 30px;
+        padding-left: 230px;
+    }
+    &__total {
+        font-size: 30px;
+        @include f500;
+        padding-bottom: 30px;
+    }
+    &__text {
+        padding-bottom: 50px;
+    }
+    &__button {
+        
+        button {
+            width: 140px;
+            height: 45px;
+            background-color: #fff;
+            color: $light-blue;
+            border-radius: 40px;
+            border: none;
+            box-shadow: 1px 2px 19px 1px rgba(172,179,186,0.75);
+            cursor: pointer;
+            margin-right: 9px; 
+            &:hover {
+                background-color: $light-blue;
+                color: #fff;
+                transition: .5s;
+            }
+        }
+    }
+    &__img__layer {
+        padding-left: 220px;
+    }
+}
 
-
-
+.create-free__upload {
+    padding-left: 0;
+}
 
 
 
