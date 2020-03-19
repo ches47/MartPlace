@@ -2233,6 +2233,10 @@ footer {
     height: 1100px;
 }
 
+.submit-back {
+    height: 655px;
+}
+
 .account-block {
     height: 620px;
     width: 560px;
@@ -2251,12 +2255,24 @@ footer {
             padding-bottom: 30px;
             font-size: 21px;
             border-bottom: 1px solid $light-gray;
-        }
+        } 
     }
+    &__submit-text {
+            text-align: left;
+            font-size: 16px;
+            width: 490px;
+            padding-left: 70px;
+        }
+    
 }
 
 .account-block__register {
     height: 930px;
+}
+
+.submit-block {
+    height: 455px;
+    
 }
 
 .account-block__data {
@@ -2303,6 +2319,10 @@ footer {
             color: #fff;
         }
     }
+}
+
+.account-block__submit {
+    padding-top: 45px;
 }
 
 .account-button__register {
