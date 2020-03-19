@@ -2228,6 +2228,11 @@ footer {
     display: flex;
     justify-content: center;
 }
+
+.register-back {
+    height: 1100px;
+}
+
 .account-block {
     height: 620px;
     width: 560px;
@@ -2248,6 +2253,10 @@ footer {
             border-bottom: 1px solid $light-gray;
         }
     }
+}
+
+.account-block__register {
+    height: 930px;
 }
 
 .account-block__data {
@@ -2289,13 +2298,23 @@ footer {
         border-radius: 40px;
         border: none;  
         margin-bottom: 30px;   cursor: pointer; 
+        &:hover {
+            background-color: #5444f6;
+            color: #fff;
+        }
     }
 }
+
+.account-button__register {
+    padding-top: 30px;
+}
+
 .account-block__lost {
     padding-left: 50px;
     color: $text;
     span {
         color: $light-blue;
+        cursor: pointer;
     }
 }
 

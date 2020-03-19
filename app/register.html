@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Register</title>
     
     <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap" rel="stylesheet">
     
@@ -91,49 +91,56 @@
     </div>
 </section>   
 
-<section class="login-back">
+<section class="login-back register-back">
     <div class="container">
-        <div class="account-block">
+        <div class="account-block account-block__register">
             
-            <div class="account-block__welcome">
+            <div class="account-block__welcome ">
                 <div class="account-block__welcome-title">
-                    Добро пожаловать снова
+                   Создать аккаунт
                 </div>
                 <div class="account-block__welcome-text">
-                    Вы можете войти под своим именем 
+                    Please fill the following fields with appropriate information
+                    to register a new MartPlace account.
                 </div>
             </div>
             
             <div class="account-block__data">
                
                 <div class="account-block__data-user">
+                    Ваше Имя
+                </div>
+                <input type="text" placeholder="Введите Ваше Имя..." required>
+            
+                <div class="account-block__data-user">
+                    Ваш Адрес
+                </div>
+                <input type="text" placeholder="Введите Ваше Адрес..." required>
+                
+                <div class="account-block__data-user">
                     Имя Пользователя
                 </div>
-                <input type="text" placeholder="Enter your username..." required>
-            
+                <input type="text" placeholder="Введите Имя Пользователя..." required>
+                
                 <div class="account-block__data-user">
                     Пароль
                 </div>
-                <input type="text" placeholder="Enter your password..." required>
+                <input type="text" placeholder="Введите Пароль  ..." required>
+                
+                <div class="account-block__data-user">
+                    Подтвердите Пароль
+                </div>
+                <input type="text" placeholder="Повторите Пароль..." required>
             </div>
             
-            <div class="account-block__remember">
-                 <div class="aside__price-license-name aside__price-license-multi">
-                              <label class="checkbox-transform">
-                <input type="checkbox" class="checkbox__input"> 
-                <span class="checkbox__label">Запомните меня </span>
-                         </label>
-                         </div>
-            </div>
-            
-            <div class="account-block__button">
-                <button type="submit">Войти</button>
+            <div class="account-block__button account-button__register">
+                <button type="submit">Зарегистрироваться</button>
             </div>
             
             <div class="account-block__lost">
-                Потеряли свое <span>имя польз.</span> или <span>пароль</span>?&nbsp
-                У вас нет<span> аккаунта?</span>
+                Уже есть аккаунт?&nbsp <span>Войти</span>
             </div>
+            
       </div>      
     </div>
 </section>      
