@@ -2520,12 +2520,39 @@ button.membership__block-button-red {
     background-color: $pink;
 }
 
-button.membership__block-button-yellow {
+button.membership__block-button-orange {
     background-color: $orange;
 }
   
+//terms-use
+.terms-use {
+    background-color: $light-gray;
+    height: 1750px;
+    padding-top: 60px;
+}
+.term {
+    width: 1150px;
+    background-color: #fff;
+    padding-left: 30px;
+    
+    &__block {
+   
+        
+        &-name {
+            padding-top: 30px;
+            padding-bottom: 30px;
+            @include f700;
+            font-size: 24px;
+            border-bottom: 1px solid $light-gray;
+        }
+        &-text {
+            padding-top: 20px;
+            padding-bottom: 50px;
+            max-width: 1085px;;
+        }
+    }
 
-
+}
 
 
 
