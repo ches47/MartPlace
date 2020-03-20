@@ -2722,6 +2722,35 @@ button.membership__block-button-orange {
         color: $light-gray;
         font-size: 15px;
     }
+    
+}
+
+.blog__search-push {
+    margin-top: -29px;
+    height: 245px;
+    background-color: #fff;
+    padding-top: 20px;
+    padding-left: 20px;
+    button {
+            margin-right: 10px;
+            margin-bottom: 10px;
+            width: 90px;
+            color: $blue;
+            height: 44px;
+            background-color: $light-gray;
+            border-radius: 47px;
+            border: none;
+            cursor: pointer;  
+            &:hover {
+                background-color:  $blue;
+                color: #fff;
+                transition: .5s;
+            }
+    }
+}
+
+.blog__search-banner {
+    padding-top: 30px;
 }
 
 .blog__search-blocks {
@@ -2756,4 +2785,26 @@ button.membership__block-button-orange {
            
    }
 }
+
+.aside__category {
+    width: 360px;
+}
+
+.aside__blog {
+    
+    &::after {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
 
