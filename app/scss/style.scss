@@ -2555,10 +2555,205 @@ button.membership__block-button-orange {
 }
 
 
+//blog Page
+.blog {
+    background-color: $light-gray;
+    padding-top: 60px;
+    height: 2750px;
+    
+ 
+    &__inner {
+        display: flex;    
+    }
+    &__content {
+        max-width: 750px;    
+    }
+    &__content-block-img {
+        margin-bottom: -5px;
+    }
+    &__content-main {
+        background-color: #fff;
+        padding-top: 40px;
+        margin-bottom: 50px;
+        padding-left: 30px;
+        &-title {
+            font-size: 30px;
+            color: #000;
+            @include f700;
+            &:hover {
+                color: $light-blue;
+                transition: .5s;
+            }
+        }
+        &-user {
+            padding: 20px 0;
+            border-bottom: 1px solid $light-gray;
+            color: $text;
+            &::before {
+                content: '\e971';
+                font-family: 'icomoon';
+                padding-right: 10px;
+            }
+             .name {
+                 font-size: 17px;
+                 @include f700;
+                 color: $light-blue; 
+                 padding-right: 20px;
+             } 
+            .born {
+                &::before {
+                    content: '\e950';
+                    font-family: 'icomoon';
+                    padding: 0 10px;
+                }
+            }
+            .chat {
+                
+                &::before {
+                    content: '\e96c';
+                    font-family: 'icomoon';
+                    padding-left: 20px;
+                    padding-right: 10px;
+                    
+                }
+            }
+            .view {
+                
+                &::before {
+                    content: '\e9ce';
+                    font-family: 'icomoon';
+                    padding-left: 20px;
+                    padding-right: 10px;
+                }
+            }
+        }
+    &-text {
+        padding: 20px 0;
+        
+        width: 690px;
+      }
+    &-button {
+        padding-bottom: 40px;
+        button {
+            width: 135px;
+            color: #fff;
+            height: 44px;
+            background-color: $light-blue;
+            border-radius: 47px;
+            border: none;
+            cursor: pointer;            &:hover {
+                background-color:  $blue;
+                
+                transition: .5s;
+            }
+        }
+    }
+        
+    }
+}
+
+.blog__inner-arrows {
+    padding-top: 0;
+}
 
 
+.blog__aside {
+    padding-left: 30px;
+}
 
+.blog__search {
+    padding-top: 30px;
+    width: 360px;
+    background-color: #fff;
+    &-title {
+        font-size: 20px;
+        padding-left: 30px;
+        padding-bottom: 20px;
+        cursor: pointer;
+        transition: .2s;
+        @include f700;
+        span {
+            padding-left: 50px;
+            color: #000;
+        }
+        
+    }
+    .active {
+            color: $light-blue;
+    }
+    &-post {
+        padding-top: 20px;
+        border-top: 1px solid $light-gray;
+        padding-left: 30px;
+    }
+}
 
+.blog__search {
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    border-radius: 3px;
+    &-post {
+        position: relative;
+    }
+        
+    input {
+        display: block;
+        width: 290px; 
+        box-shadow: 0px 1px 10px 0px rgba(172,179,186,0.75);
+        padding: 20px 0;
+        padding-left: 25px;
+        border-radius: 70px;
+        height: 27px;
+        font-size: 15px;
+        border: none;
+        position: relative;
+    }
+    button {
+        position: absolute;
+        top: 19px;
+        right: 39px;
+        width: 70px;
+        height: 41px;
+        background-color: $light-blue;
+        border-radius: 40px;
+        border: none;
+    }
+    .icon-search {
+        color: $light-gray;
+        font-size: 15px;
+    }
+}
 
+.blog__search-blocks {
+    padding-left: 20px;
+}
 
+.blog__search-block {
+    display: flex;
+    border-bottom: 1px solid $light-gray;
+    padding: 20px 0;
+    
+    &-text {
+        width: 270px;
+        @include f700;
+        font-size: 16px;
+        padding-left: 20px;
+        line-height: 27px;
+    }
+}
+
+.blog__search-block:last-child {
+    border: none;
+}
+
+.blog__search-block-data {
+        color: gray;
+        font-size: 15px;
+        @include f500;
+        &::before {
+            content: '\e950';
+            font-family: 'icomoon';
+           
+   }
+}
 
