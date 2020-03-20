@@ -2799,10 +2799,57 @@ button.membership__block-button-orange {
 
 
 
+//Contact Page
+.corporate-main {
+    text-align: center;
+    &-us {
+        font-size: 30px;
+        line-height: 50px;
+    }
+    &-place {
+        font-size: 20px;
+    }
+}
 
+.contact {
+    background-color: $light-gray;
+    &-title {
+        padding-top: 90px;    
+    }
+}
 
+.contact-blocks {
+    display: flex;
+}
 
+.contact-block {
+    text-align: center;
+    border-radius: 4px;
+    margin-right: 30px;
+    height: 260px;
+    width: 370px;
+    background-color: #fff;
+    padding-top: 40px;
+    margin-bottom: 50px;
+    span {
+        color: $light-blue;
+        font-size: 42px;
+        
+    }
+}
 
+.contact-blocks__title {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    @include f700;
+    font-size: 20px;
+    
+}
+
+.contact-blocks__text {
+    max-width: 300px;
+    padding-left: 50px;
+}
 
 
 
