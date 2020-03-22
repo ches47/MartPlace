@@ -2813,6 +2813,7 @@ button.membership__block-button-orange {
 
 .contact {
     background-color: $light-gray;
+    padding-bottom: 120px;
     &-title {
         padding-top: 90px;    
     }
@@ -2830,7 +2831,7 @@ button.membership__block-button-orange {
     width: 370px;
     background-color: #fff;
     padding-top: 40px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     span {
         color: $light-blue;
         font-size: 42px;
@@ -2852,6 +2853,72 @@ button.membership__block-button-orange {
 }
 
 
+.contact-leave {
+    width: 100%;
+    background-color: #fff;
+    text-align: center;
+    &__title {
+        font-size: 24px;
+        @include f700;
+        padding-top: 60px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid $light-gray;
+    }
+}
+
+.contact-leave__form {
+    padding-top: 35px;
+    padding-bottom: 55px;
+    input {
+        border: 1px solid $light-gray;
+        width: 365px;
+        height: 55px; 
+        margin: 20px;
+        padding-left: 50px;
+        &::placeholder {
+            color: $text;
+            font-size: 18px;
+        }
+    }
+    textarea {
+        padding-top: 20px;
+        height: 130px;
+        min-width: 770px;
+        border: 1px solid $light-gray;
+        resize: none;
+        margin: 20px;
+        padding-left: 50px;
+        &::placeholder {
+            color: $text;
+            font-size: 20px;
+        }
+    }
+    button {
+            width: 160px;
+            height: 45px;
+            background-color: $light-blue;
+            border-radius: 40px;
+            border: none;
+            cursor: pointer;
+            color: #fff;
+            margin-right: 9px; 
+            &:hover {
+                 background-color: $violet;
+                transition: .5s;
+    }
+  }
+}
 
 
+.map {
+    background-color: $text-gray;
+}
+
+.contact__map {
+    height: 415px;
+    iframe {
+       width: 100%;
+        height: 415px;
+    }
+}
 
