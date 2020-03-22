@@ -2922,3 +2922,46 @@ button.membership__block-button-orange {
     }
 }
 
+
+.page {
+    background-color: #fff;
+    padding-bottom: 90px;
+} 
+
+.page-404 {
+    text-align: center;
+    &__text {
+        padding: 40px 0;
+        font-size: 30px;
+        @include f700;
+    }
+    &__button {
+        
+        button {
+            margin-right: 10px;
+            margin-bottom: 10px;
+            width: 190px;
+            color: #fff;
+            height: 44px;
+            background-color: $light-blue;
+            border-radius: 47px;
+            border: none;
+            cursor: pointer;  
+            &:hover {
+                background-color:  $blue;
+                color: #fff;
+                transition: .5s;
+            }
+    }
+    }
+}
+
+
+
+
+
+
+
+
+
+
