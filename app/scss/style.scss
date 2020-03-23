@@ -252,6 +252,35 @@
     }
 }
 
+.menu__list-products  { 
+    position: absolute;
+    left: 85px;
+    top: 59px;
+    width: 270px;
+    height: auto;
+    transition: all .3s;
+    background-color: #fff;
+    padding-left: 20px;
+    
+    padding: 20px;
+    line-height: 45px;
+    border-top: 2px solid $light-blue;
+    box-shadow: 0px 1px 10px 0px rgba(172,179,186,0.75);
+    z-index: 2;
+    a {
+        color: #000;     
+        &:hover {
+            padding-top: 3px;
+            padding-left: 20px;
+            color: #fff;
+            width: 230px;
+            height: 45px;
+            background-color: $light-blue;
+
+        }
+    }
+}
+
 
 
 .header__search {
@@ -434,6 +463,9 @@
 }
 
 .basket__menu {
+    position: absolute;
+    top: 78px;
+    right: 170px;
     width: 400px;
     height: auto;
     transition: all .3s;
@@ -442,16 +474,16 @@
     border-top: 2px solid $light-blue;
     box-shadow: 0px 1px 10px 0px rgba(172,179,186,0.75);
     z-index: 6;
-//    &::before {
-//        position: absolute;
-//        top: -26px;
-//        right: 65px;
-//        content: '';
-//        width: 0;
-//        height: 0;
-//        border: 12px solid transparent;
-//        border-bottom-color: $light-blue;
-//    }
+    &::before {
+        position: absolute;
+        top: -26px;
+        right: 72px;
+        content: '';
+        width: 0;
+        height: 0;
+        border: 12px solid transparent;
+        border-bottom-color: $light-blue;
+    }
     a {
         &:hover {
             padding: 15px;
@@ -468,6 +500,290 @@
     padding:  25px 0;
     border-bottom: 1px solid $light-gray;
 }
+
+.envelop__menu {
+    position: absolute;
+    top: 78px;
+    right: 222px;
+    width: 400px;
+    height: auto;
+    transition: all .3s;
+    background-color: #fff;
+    padding-left: 20px;
+    border-top: 2px solid $light-blue;
+    box-shadow: 0px 1px 10px 0px rgba(172,179,186,0.75);
+    z-index: 6;
+    &::before {
+        position: absolute;
+        top: -26px;
+        right: 72px;
+        content: '';
+        width: 0;
+        height: 0;
+        border: 12px solid transparent;
+        border-bottom-color: $light-blue;
+    }
+    a {
+        &:hover {
+            padding: 15px;
+            color: #fff;
+            width: 230px;
+            height: 45px;
+            background-color: $light-blue;
+        }
+    } 
+}    
+
+.envelop__messages {
+    position: relative;
+    height: 60px;
+    padding: 20px;
+    @include f700;
+    font-size: 20px;
+    border-bottom: 1px solid $light-gray;
+    span {
+        position: absolute;
+        top: 21px;
+        right: 25px;
+        font-size: 18px;
+        @include f500;
+        color: $light-blue;
+    }
+}
+
+.envelop__block {
+    display: flex;
+    padding: 20px;
+    border-bottom: 1px solid $light-gray;
+    &-img {
+        padding-right: 10px;
+    }
+}
+
+.envelop__block-data {
+    position: relative;
+    
+    &-name {
+        @include f700;
+        font-size: 20px;
+        padding-bottom: 10px;
+        
+        &::after {
+            padding-left: 10px;
+            content: "\e945";
+            font-family: 'icomoon';
+            color: $light-blue;  
+            font-size: 17px;
+        }
+        span {
+            position: absolute;
+            top: 0;
+            right: -25px;
+            color: $light-blue;  
+            @include f500;
+        }
+    }
+    &-echo {
+        &::after {
+            padding-left: 10px;
+            content: "\e966";
+            font-family: 'icomoon';
+            color: $text;  
+            
+        }
+         span {
+            position: absolute;
+            top: 0;
+            right: -25px;
+            color: $text;  
+            @include f500;
+        }
+    }
+     &-none {
+        &::after {
+            display: none;    
+        }
+         span {
+            position: absolute;
+            top: 0;
+            right: -25px;
+            color: $text;  
+            @include f500;
+        }
+    }
+}
+
+.bell__menu {
+    position: absolute;
+    top: 78px;
+    right: 275px;
+    width: 400px;
+    height: auto;
+    transition: all .3s;
+    background-color: #fff;
+    padding-left: 20px;
+    border-top: 2px solid $light-blue;
+    box-shadow: 0px 1px 10px 0px rgba(172,179,186,0.75);
+    z-index: 6;
+    &::before {
+        position: absolute;
+        top: -26px;
+        right: 72px;
+        content: '';
+        width: 0;
+        height: 0;
+        border: 12px solid transparent;
+        border-bottom-color: $light-blue;
+    }
+    a {
+        &:hover {
+            padding: 15px;
+            color: #fff;
+            width: 230px;
+            height: 45px;
+            background-color: $light-blue;
+        }
+    } 
+}    
+
+.bell__block {
+    display: flex;
+    padding: 20px;
+    border-bottom: 1px solid $light-gray;
+    &-img {
+        padding-right: 10px;
+    }
+}
+
+.bell__block-data {
+    position: relative;
+    
+    &-name {
+        @include f700;
+        font-size: 20px;
+        padding-bottom: 10px;
+        span {
+            color: $text;
+            font-size: 15px;
+        }
+        .marketify {
+            color: $light-blue;
+            font-size: 15px;
+            position: relative;
+            &::after {
+                position: absolute;
+                top: 0;
+                right: -45px;
+                text-align: center;
+                padding-top: 5px;
+                
+                content: '\e9da';
+                font-family: 'icomoon';
+                background-color: $light-gray;
+                width: 34px;
+                height: 34px;
+                border-radius: 50%;
+            }
+        }
+        .bundle {
+            color: $light-blue;
+            font-size: 15px;
+            position: relative;
+            &::after {
+                color: $violet;
+                position: absolute;
+                top: 0;
+                right: -45px;
+                text-align: center;
+                padding-top: 5px;
+                
+                content: '\e96e';
+                font-family: 'icomoon';
+                background-color: $light-gray;
+                width: 34px;
+                height: 34px;
+                border-radius: 50%;
+            }
+        }
+        .bryson {
+            color: $light-blue;
+            font-size: 15px;
+            position: relative;
+            &::after {
+                color: $pink;
+                position: absolute;
+                top: 0;
+                right: -73px;
+                text-align: center;
+                padding-top: 5px;
+                
+                content: '\e900';
+                font-family: 'icomoon';
+                background-color: $light-gray;
+                width: 34px;
+                height: 34px;
+                border-radius: 50%;
+            }
+        }
+        .rida {
+            color: $light-blue;
+            font-size: 15px;
+            position: relative;
+            &::after {
+                color: $green;
+                position: absolute;
+                top: -7px;
+                right: -59px;
+                text-align: center;
+                padding-top: 5px;
+                
+                content: '\e994';
+                font-family: 'icomoon';
+                background-color: $light-gray;
+                width: 34px;
+                height: 34px;
+                border-radius: 50%;
+            }
+        }
+        
+        
+        
+        
+        .moment {
+            font-size: 15px;
+            color: $text;
+        }
+    }
+    &-echo {
+        &::after {
+            padding-left: 10px;
+            content: "\e966";
+            font-family: 'icomoon';
+            color: $text;  
+            
+        }
+         span {
+            position: absolute;
+            top: 0;
+            right: -25px;
+            color: $text;  
+            @include f500;
+        }
+    }
+     &-none {
+        &::after {
+            display: none;    
+        }
+         span {
+            position: absolute;
+            top: 0;
+            right: -25px;
+            color: $text;  
+            @include f500;
+        }
+    }
+}
+
 
 .basket__img {
     padding-right: 20px;
