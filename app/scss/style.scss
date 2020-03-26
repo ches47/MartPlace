@@ -79,15 +79,35 @@
     }
 }
 
+//.user__box,
 .user__box {
-    position: relative;
-    &:hover {
+    height: 96px;
+    margin-top: 40px;
+    position: relative;   
+        &:hover {
         .user__menu {
             height: auto;
             
             padding: 20px;
             overflow: auto;
         }
+    }          
+}
+
+.basket__box,
+.envelop-box,
+.bell-box {
+    height: 63px;
+    margin-top: 40px;
+    position: relative; 
+    
+    &:hover {
+        .basket__menu,
+        .envelop__menu,
+        .bell__menu{
+            height: auto;
+            overflow: auto;    border-top: 2px solid #0674ec;   
+        }        
     }
 }
 
@@ -163,7 +183,6 @@
 
 .menu {
     height: 60px;
-     position: relative;
 }
 
 .menu__list {
@@ -181,7 +200,7 @@
         padding-left: 0;
     }
     li {
-        z-index: -1;
+       
         padding-left: 20px;
     }
     a {
@@ -194,7 +213,9 @@
     .active {
          color: $light-blue;
     }
+
 }
+
 
 
 
@@ -203,7 +224,7 @@
     display: flex;
     
     position: absolute;
-    left: 0;
+    left: 274px;
     top: 59px;
     min-width: 1200px;
     height: auto;
@@ -288,7 +309,7 @@
 
 .menu__list-items  {
     position: absolute;
-    left: 240px;
+    left: 506px;
     top: 59px;
     width: 270px;
     height: auto;
@@ -317,19 +338,23 @@
 
 .menu__list-home  {
     position: absolute;
-    left: 0;
+    left: 287px;
     top: 59px;
     width: 270px;
     height: auto;
     transition: all .3s;
     background-color: #fff;
     padding-left: 20px;
-    
+
     padding: 20px;
     line-height: 45px;
     border-top: 2px solid $light-blue;
     box-shadow: 0px 1px 10px 0px rgba(172,179,186,0.75);
-    z-index: 2;
+    z-index: 1;
+//    overflow: hidden;
+    &:hover {
+        
+    }
     a {
         color: #000;     
         &:hover {
@@ -344,9 +369,18 @@
     }
 }
 
+a.menu__list-main {
+    height: 96px;
+    &:hover {
+
+           
+        }    
+    }
+
+
 .menu__list-products  { 
     position: absolute;
-    left: 85px;
+    left: 374px;
     top: 59px;
     width: 270px;
     height: auto;
@@ -390,7 +424,7 @@
         font-size: 15px;
         border: none;
         position: relative;
-        z-index: -1;
+        
     }
     button {
         position: absolute;
@@ -405,7 +439,7 @@
     .icon-search {
         color: #fff;
         font-size: 15px;
-        z-index: -1;
+        
     }
 }
 
@@ -556,16 +590,16 @@
 
 .basket__menu {
     position: absolute;
-    top: 78px;
-    right: 170px;
+    top: 64px;
+    right: -167px;
     width: 400px;
-    height: auto;
+    height: 0;
     transition: all .3s;
     background-color: #fff;
     padding-left: 20px;
-    border-top: 2px solid $light-blue;
     box-shadow: 0px 1px 10px 0px rgba(172,179,186,0.75);
-    z-index: 6;
+    z-index: 1;
+    overflow: hidden;
     &::before {
         position: absolute;
         top: -26px;
@@ -595,16 +629,17 @@
 
 .envelop__menu {
     position: absolute;
-    top: 78px;
-    right: 222px;
+    top: 64px;
+    right: -202px;
     width: 400px;
-    height: auto;
+    height: 0;
     transition: all .3s;
     background-color: #fff;
     padding-left: 20px;
-    border-top: 2px solid $light-blue;
+//    border-top: 2px solid $light-blue;
     box-shadow: 0px 1px 10px 0px rgba(172,179,186,0.75);
     z-index: 6;
+    overflow: hidden;
     &::before {
         position: absolute;
         top: -26px;
@@ -707,16 +742,17 @@
 
 .bell__menu {
     position: absolute;
-    top: 78px;
-    right: 275px;
+    top: 64px;
+    left: -129px;
     width: 400px;
-    height: auto;
+    height: 0;
     transition: all .3s;
     background-color: #fff;
     padding-left: 20px;
-    border-top: 2px solid $light-blue;
+//    border-top: 2px solid $light-blue;
     box-shadow: 0px 1px 10px 0px rgba(172,179,186,0.75);
-    z-index: 6;
+    z-index: 2;
+    overflow: hidden;
     &::before {
         position: absolute;
         top: -26px;
