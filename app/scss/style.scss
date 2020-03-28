@@ -1320,10 +1320,16 @@ button.weekly__button-demo {
     }
   } 
     
-    &-filter {
+
+ 
+}
+
+.newest__products-main {
+    position: relative;
+        &-filter {
         position: absolute;
-        top: 40px;
-        right: 40px;
+        top: -24px;
+        right: 6px;
         font-size: 19px;
         span {
          
@@ -1332,7 +1338,6 @@ button.weekly__button-demo {
             color: $medium-gray;
         }
     }
- 
 }
 
 
@@ -1362,6 +1367,142 @@ button.weekly__button-demo {
         }
     }
 }
+
+//content-blocks
+.content-blocks {
+    display: flex; 
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 60px;
+}
+
+.content__block {
+    padding-right: 18px;
+    padding-bottom: 20px;
+    &-img {
+        background-image: url(../img/new-products/BG-copy.jpg);
+        max-width: 360px;
+        
+//     float: left;
+        
+        margin-bottom: -5px;
+        width: 100%;  
+        height: 230px; 
+        border-radius: 3px;
+        position: relative;
+        button {
+            display: none;   
+        }
+    &:hover {
+        background: linear-gradient(to top right, #8E2DE2, #4A00E0);
+        button {
+             position: absolute;  
+             display: inline-block;
+             width: 120px;
+             border: 1px solid #fff;
+             padding: 10px 35px; 
+             margin-right: 10px;
+             border-radius: 19px; 
+             color: #fff;
+             background: $blue;
+             cursor: pointer;
+             font-size: 17px;
+             transition: 0.6s;
+           
+        }
+
+     }  
+  }
+}
+
+.content__desc {
+    
+    padding: 10px;
+    width: 360px;
+    background-color: #fff;
+    border-radius: 3px;   
+        &-title {
+        
+        font-size: 20px;  
+        @include f700;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        padding-left: 20px;
+    }
+
+    &-name {
+        display: flex;
+         padding-left: 20px;
+        padding-bottom: 20px;
+    }
+    &-theme {
+        padding: 0 10px;
+        padding-top: 3px;
+        @include f700;
+    }
+    
+    &-icon {
+        color: $violet;
+        padding: 0 10px;
+        padding-top: 5px;
+        &::before {
+            padding-right: 10px;
+        }
+    }
+    &-text {
+        width: 300px;
+        padding-left: 20px;
+        padding-bottom: 30px;
+        display: block;
+        font-size: 14px;
+        border-bottom: 1px solid $light-gray;
+    }
+ 
+}
+
+.content__item {
+    padding: 25px 20px;
+    
+    display: flex;
+    position: relative;
+    border-top: 1px solid #d9dfe5;
+    
+    &-money {
+        padding: 3px 16px;
+        background-color: $turq;
+        border-radius: 13px;
+        color: #fff;
+        margin-right: 20px;
+    }
+    &-like {
+        padding-top: 7px;
+        padding-right: 20px;
+        color: $light-blue;
+        span {
+            color: $medium-gray;
+        }
+    }
+    &-star {
+        position: absolute;
+        top: 24px;
+        right: 82px;
+    }
+    &-busket {
+        position: absolute;
+        top: 25px;
+        right: -8px;
+        
+        padding-top: 7px;
+        padding-right: 20px;
+        color: $light-blue;
+    }
+} 
+
+
+
+
+
+
 .products-blocks {
     display: flex; 
     justify-content: space-between;
@@ -1370,6 +1511,7 @@ button.weekly__button-demo {
 }
 
 .product__block {
+    
     padding-right: 18px;
     padding-bottom: 20px;
     &-img {
@@ -1422,6 +1564,7 @@ button.weekly__button-demo {
                 padding-right: 5px;
                 font-size: 15px;
                 color: $text;
+                
                 .icon-heart {
                     padding-bottom: 10px;
                 }
@@ -1471,7 +1614,7 @@ button.weekly__button-demo {
 }
 
 .followers-blocks {
-    padding-bottom: 0;
+    padding-bottom: 120px;
     padding-top: 40px;
 }
 
@@ -1487,6 +1630,7 @@ button.weekly__button-demo {
 }
 .followers__desc {
     padding: 30px;
+    margin-top: -5px;
     width: 350px;
     height: 330px;
     background-color: #fff;
@@ -1595,7 +1739,8 @@ button.button-demo {
     }
 }  
 .products-new {
-    padding-top: 60px;
+   padding-bottom: 120px;
+   text-align: center;
       button { 
         
         margin-right: 10px;
@@ -2110,7 +2255,6 @@ footer {
 //slider-search
 .slider-search {
     min-height: 280px;
-    height: 100%;
      background: linear-gradient(to top right, #8E2DE2, #4A00E0);
 }
 
@@ -2258,7 +2402,9 @@ footer {
     &__arrows {
         padding-top: 40px;
         padding-bottom: 110px;
-        
+        &-left {
+            text-align: right;
+        }
     }
 }
 .product-page__inner {
@@ -2323,6 +2469,8 @@ footer {
 
 .icon-circle-right:before {
     padding-right: 10px;
+    content: '\e949';
+    font-family: 'icomoon';
 }
 
 .price-range {
