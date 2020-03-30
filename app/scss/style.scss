@@ -1552,12 +1552,12 @@ button.weekly__button-demo {
 
 .product__block  {
     transition: all .5s;
-//     width: 360px;
     &.list {
         width: 100%;
     .product__desc-text {
             display: block;
-            font-size: 14px;
+            text-align: center;
+            font-size: 16px;
              border-bottom: 1px solid $light-gray;
             .product__desc-icons {
                 padding-top: 20px;
@@ -1576,7 +1576,8 @@ button.weekly__button-demo {
         }
         
         .product__desc-basket {
-            top: 0px;
+            top: 4px;
+            right: 50px;
         }
         
         .product__desc-theme {
@@ -1585,7 +1586,7 @@ button.weekly__button-demo {
         
         .product__desc-rating {
             padding-top: 0;
-            padding-bottom: 0;
+            padding-left: 36px;
             .num {
                 padding-top: 0;
                 display: block;
@@ -1605,9 +1606,23 @@ button.weekly__button-demo {
         }
         .product__desc-name {
                 padding: 10px 35px;
+                position: relative;
+            .full-block__money {
+                display: block;
+                position: absolute;
+                top: 10px;
+                right: 10px;
+            }
         }
     }
 }
+
+.product__desc-name {
+    .full-block__money {
+        display: none;
+    }
+}
+
 
 .followers {
     background-color: #cdd5e5;
@@ -2411,6 +2426,23 @@ footer {
     padding-top: 50px;
     display: flex;
 }
+
+//Full Block
+.full-block {
+    
+    &__desc {
+        
+    }
+    
+    &__theme {
+        text-align: right;
+    }
+}
+
+
+
+
+
 
 .aside__item {
     background-color: #fff;
@@ -3379,6 +3411,7 @@ footer {
             &:hover {
                 background-color: #5444f6;
                 color: #fff;
+                transition: .5s;
             } 
       
         }
