@@ -1029,6 +1029,7 @@ span.icon-bin {
         display: flex;
         justify-content: center;
         padding-bottom: 30px;
+        cursor: pointer;
     }
     &-item {
         width: 420px;
@@ -1053,7 +1054,7 @@ span.icon-bin {
     }
   
 }
-
+ш
 //weekly-products
 .weekly-products {
     background-color: #cdd5e5;
@@ -1062,38 +1063,39 @@ span.icon-bin {
 
 .weekly__wrapper {
     max-width: 1920px;
+    padding-bottom: 125px;
 }
 
 .weekly__title {
     height: 105px;
     background-color: #fff;
     position: relative;
-    &-arrows {
-        position: absolute;
-        top: 35px;
-        right: 30px; 
-        background-color: $violet;
-        border-radius: 20px;
-        width: 75px;
-        height: 30px;
-        border: none;
-        
-       } 
-    &-chevron {
-        color: $light-gray;
-        font-size: 14px;
-        position: relative;
-    }
-    &-left {
-        position: absolute;
-        top: 8px;
-        left: 16px;   
-    }
-    &-right {
-        position: absolute;
-        top: 8px;
-        right: 14px;
-    }
+//    &-arrows {
+//        position: absolute;
+//        top: 35px;
+//        right: 30px; 
+//        background-color: $violet;
+//        border-radius: 20px;
+//        width: 75px;
+//        height: 30px;
+//        border: none;
+//        
+//       } 
+//    &-chevron {
+//        color: $light-gray;
+//        font-size: 14px;
+//        position: relative;
+//    }
+//    &-left {
+//        position: absolute;
+//        top: 8px;
+//        left: 16px;   
+//    }
+//    &-right {
+//        position: absolute;
+//        top: 8px;
+//        right: 14px;
+//    }
 }
 
 .followers__title  {
@@ -1171,6 +1173,30 @@ span.icon-bin {
      }  
   }
 }
+
+.slick-arrow {
+    position: absolute;
+    top: -70px;
+    right: 17px;
+    padding-top: 3px;
+    background-color: #7347c1;
+    border-radius: 20px;
+    width: 52px;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    text-align: center;
+}
+
+.weekly__title-left{
+    width: 44px;
+}
+
+.weekly__title-right {
+    right: 38px;
+}
+
 
 button.weekly__button-info {
     position: absolute;
@@ -1284,7 +1310,7 @@ button.weekly__button-demo {
 .newest-release {
     background-color: $light-gray;
     padding: 110px 0 30px;
-    position: relative;
+
 }
 .newest__products{
     height: 105px;
@@ -1292,11 +1318,15 @@ button.weekly__button-demo {
     position: relative;
       &-menu {
         position: absolute;
-        right: 249px;
-        bottom: -150px;
+        right: 13px;
+        top: 92px;
+          
+        display: block;
+          
         border-radius: 2px;
         width: 200px;
         height: 200px;
+        font-size: 15px;
         background-color: #fff;
         padding: 30px 50px 15px 30px; 
         box-shadow: 6px -5px 10px -1px rgba(172,179,186,0.75);
@@ -1332,20 +1362,30 @@ button.weekly__button-demo {
         right: 6px;
         font-size: 19px;
         span {
-         
             padding-left: 10px;
             font-size: 16px;
             color: $medium-gray;
+            &:hover {
+                .newest__products-menu {
+                    display: block;
+                }    
+              }
+            }
         }
     }
-}
+
+
+
+
+
+
 
 
 //products
 .products {
     background-color: $light-gray;
     
-    &-buttons {
+    &__inner-buttons {
         background-color: #fff;
         height: 90px;
         padding: 25px;
@@ -2697,8 +2737,9 @@ footer {
         @include f700;
     }
     &__sell {
-        font-size: 30px;
+        font-size: 24px;
         padding-bottom: 30px;
+        font-weight: 300;
     }
     &__home {
         
@@ -2819,10 +2860,12 @@ footer {
         color: #000;
         padding: 20px 0;
         cursor: pointer;
+        border-bottom: 1px solid  $light-gray;
     }
        .active {
             border-top: 3px solid $light-blue;
-            color: $light-blue;;
+            color: $light-blue;
+            border-bottom: none;
         }
     .number {
         color: #000;
@@ -2832,6 +2875,9 @@ footer {
     .tab + .tab {
         border-bottom: 1px solid  $light-gray;
         border-left: 1px solid  $light-gray;
+        &.active {
+            border-bottom: none;
+        }
     }
 }
 
@@ -3461,9 +3507,7 @@ button.membership__block-button-orange {
 .blog {
     background-color: $light-gray;
     padding-top: 60px;
-    height: 2750px;
-    
- 
+//    height: 2750px;
     &__inner {
         display: flex;    
     }
@@ -3480,6 +3524,7 @@ button.membership__block-button-orange {
         padding-left: 30px;
         &-title {
             font-size: 30px;
+            line-height: 35px;   
             color: #000;
             @include f700;
             &:hover {

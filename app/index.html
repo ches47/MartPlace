@@ -11,6 +11,10 @@
      
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/style.min.css">
+    
+    <!-- Добавляем стили из CDN SLICK-->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
 </head>
 <body>
  
@@ -554,6 +558,8 @@
        
         <div class="weekly__title title">
              Еженедельные Продукты
+             
+<!--
              <div class="weekly__button">
                  <button type="button" class="weekly__title-arrows">
                      <a href="#" class="weekly__title-chevron  weekly__title-left"><i class="fas fa-chevron-left"></i></a> 
@@ -561,6 +567,7 @@
                      </a>
                 </button> 
              </div>    
+-->
         </div>   
         
         <div class="weekly__inner">
@@ -616,6 +623,110 @@
                 </div>   
                     
             </div> 
+           <div class="weekly__inner-box">
+                <a href="#" class="weekly__inner-img">
+                 <button class="weekly__button-info" type="submit" >Инфо</button>
+                 <button class="weekly__button-demo" type="submit">Демо</button>
+                </a>
+                
+                <div class="weekly__inner-content">
+                    <div class="weekly__inner-title">
+                         Интернет магазин-Шаблон   
+                    </div> 
+                    <div class="weekly__info">
+                        <a class="weekly__info-author" href="#">
+                            <span clas="weekly__info-logo">
+                                <img src="img/weekly/user-Ellipse.png" alt="">
+                            </span>
+                            <div class="weekly__info-block">
+                            <span class="weekly__info-name">AazzTech</span>
+                            <a class="weekly__info-icon icon-wordpress">WordPress</a>
+                            </div>
+                        </a>
+                    </div>
+                     
+                    <div class="weekly__info-text">
+                         Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue justo ut scelerisque.   
+                    </div>
+                    
+                    <div class="weekly__info-buttons">
+                        <button class="weekly__info-button weekly__info-web" type="button" >website</button>
+                        <button class="weekly__info-button weekly__info-plugin" type="button">plugin</button>
+                        <button class="weekly__info-button weekly__info-page" type="button">landing page</button>
+                    </div>  
+                    
+                    <div class="weekly__item">
+                       
+                        <a href="#" class="weekly__item-money">
+                            $10 - $50
+                        </a>
+                        <div class="weekly__item-like icon-heart">
+                            <span>46</span>
+                        </div>
+                        <div class="weekly__item-busket icon-shopping-basket">
+                            <span>246</span>
+                        </div>
+                        <div class="weekly__item-star">
+                            <div class="rate-star"></div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>   
+                    
+            </div>
+           <div class="weekly__inner-box">
+                <a href="#" class="weekly__inner-img">
+                 <button class="weekly__button-info" type="submit" >Инфо</button>
+                 <button class="weekly__button-demo" type="submit">Демо</button>
+                </a>
+                
+                <div class="weekly__inner-content">
+                    <div class="weekly__inner-title">
+                         Шаблон-Резюме На Одной Странице   
+                    </div> 
+                    <div class="weekly__info">
+                        <a class="weekly__info-author" href="#">
+                            <span clas="weekly__info-logo">
+                                <img src="img/weekly/user-Ellipse.png" alt="">
+                            </span>
+                            <div class="weekly__info-block">
+                            <span class="weekly__info-name">AazzTech</span>
+                            <a class="weekly__info-icon icon-wordpress">WordPress</a>
+                            </div>
+                        </a>
+                    </div>
+                     
+                    <div class="weekly__info-text">
+                         Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue justo ut scelerisque.   
+                    </div>
+                    
+                    <div class="weekly__info-buttons">
+                        <button class="weekly__info-button weekly__info-web" type="button" >website</button>
+                        <button class="weekly__info-button weekly__info-plugin" type="button">plugin</button>
+                        <button class="weekly__info-button weekly__info-page" type="button">landing page</button>
+                    </div>  
+                    
+                    <div class="weekly__item">
+                       
+                        <a href="#" class="weekly__item-money">
+                            $10 - $50
+                        </a>
+                        <div class="weekly__item-like icon-heart">
+                            <span>46</span>
+                        </div>
+                        <div class="weekly__item-busket icon-shopping-basket">
+                            <span>246</span>
+                        </div>
+                        <div class="weekly__item-star">
+                            <div class="rate-star"></div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>   
+                    
+            </div>    
         </div>
 
        </div>     
@@ -634,18 +745,20 @@
            <div class="newest__products-main-filter ">
            <a href="#">
             Filter by:
-            <span>
-                <i class="fas fa-ellipsis-v"></i>
+            <span class="dropdown">
+                <i class="fas fa-ellipsis-v dropbtn"></i>
             </span>
             </a>
             </div> 
-          </div>                           
-        </div>
-        
-        <div class="newest__products-menu">
+          </div>
+          
+          
+          
+          
+           <div class="newest__products-menu dropdown-content">
             <ul>
                 <li>
-                   <a href="#">Актуал. товары</a> 
+                   <a href="#">Товары</a> 
                 </li>
                 <li>
                    <a href="#">Бестселлер</a> 
@@ -657,29 +770,31 @@
                    <a href="#">Низкая цена</a> 
                 </li>
                 <li>
-                   <a href="#">Выс. цена</a> 
+                   <a href="#">Высокая цена</a> 
                 </li>
             </ul>
-        </div>   
-        
+        </div>                           
+        </div>
+    
     </div>
 </div>              
 <section class="products">
     <div class="container">
 
-        <div class="products-buttons">
-            <button type="button">Плагины</button>
-            <button type="button">WordPress</button>
-            <button type="button">Шаблон сайта</button>
-            <button type="button">PSD Шаблон</button>
-            <button type="button">Joomla</button>
-            <button type="button">Интерфейс</button>
-            <button type="button">Landing page</button>
-            <button type="button">Software</button>    
+       <div class="products__inner">
+        <div class="products__inner-buttons">
+            <button type="button" data-filter="all">Все</button>
+            <button type="button" data-filter=".category-worpress">WordPress</button>
+            <button type="button" data-filter=".category-joomla">Шаблон сайта</button>
+            <button type="button" data-filter=".category-psd">PSD Шаблон</button>
+            <button type="button" data-filter=".category-joomla">Joomla</button>
+            <button type="button" data-filter=".category-psd">Интерфейс</button>
+            <button type="button" data-filter=".category-psd">Landing page</button>
+            <button type="button" data-filter=".category-joomla">Software</button>    
         </div>    
-        
+           
         <div class="content-blocks">
-             <div class="content__block">
+             <div class="content__block mix category-a category-new" data-order="1">
                  <img class="content__block_img" src="" alt="">
                  <a href="#" class="content__block-img">
                  <button class="button-info" type="submit" >Инфо</button>
@@ -725,7 +840,7 @@
                    
              </div> 
              
-               <div class="content__block">
+               <div class="content__block mix category-joomla" data-order="2">
                  <img class="content__block_img" src="" alt="">
                  <a href="#" class="content__block-img">
                  <button class="button-info" type="submit" >Инфо</button>
@@ -771,7 +886,7 @@
                    
              </div> 
              
-               <div class="content__block">
+               <div class="content__block mix category-psd category-new" data-order="3">
                  <img class="content__block_img" src="" alt="">
                  <a href="#" class="content__block-img">
                  <button class="button-info" type="submit" >Инфо</button>
@@ -821,7 +936,7 @@
                    
              </div> 
              
-               <div class="content__block">
+               <div class="content__block mix category-joomla" data-order="4">
                  <img class="content__block_img" src="" alt="">
                  <a href="#" class="content__block-img">
                  <button class="button-info" type="submit" >Инфо</button>
@@ -870,7 +985,7 @@
                    
              </div> 
              
-               <div class="content__block">
+               <div class="content__block mix category-joomla" data-order="5">
                  <img class="content__block_img" src="" alt="">
                  <a href="#" class="content__block-img">
                  <button class="button-info" type="submit" >Инфо</button>
@@ -916,7 +1031,7 @@
                    
              </div> 
              
-               <div class="content__block">
+               <div class="content__block mix category-wordpress category-new" data-order="6">
                  <img class="content__block_img" src="" alt="">
                  <a href="#" class="content__block-img">
                  <button class="button-info" type="submit" >Инфо</button>
@@ -963,11 +1078,157 @@
                         
                  </div> 
                    
-             </div>    
-        </div>
+             </div> 
+
+               <div class="content__block mix category-joomla" data-order="7">
+                 <img class="content__block_img" src="" alt="">
+                 <a href="#" class="content__block-img">
+                 <button class="button-info" type="submit" >Инфо</button>
+                 <button class="button-demo" type="submit">Демо</button>
+                </a>
+                 
+                 
+                 <div class="content__desc">
+                    
+                     <div class="content__desc-title">
+                         E-commerce Shopping Cart    
+                     </div>
+                     
+                     <div class="content__desc-name">
+                        <a href="#"><img class="content__desc-circle" src="img/weekly/user-Ellipse.png" alt="circle"></a>
+                         <div class="content__desc-theme">
+                             Design-Hub   
+                         </div>
+                         <a class="content__desc-icon  icon-wordpress" href="#">Plugin</a>
+                     </div>
+                      
+                    <div class="content__desc-text">
+                         Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque 
+                         the mattis, leo quam aliquet congue.   
+                    </div> 
+                    
+                    <div class="content__item">
+                       
+                        <a href="#" class="content__item-money">
+                            $20-50
+                        </a>
+                        <div class="content__item-like icon-heart">
+                            <span>90</span>
+                        </div>
+                        <div class="weekly__item-star content__item-star">
+                            <div class="rate-star"></div>
+                        </div>
+                        <div class="content__item-busket icon-shopping-basket">
+                            <span>45</span>
+                        </div>
+
+                        
+                    </div>        
+                        
+                 </div> 
+                   
+             </div> 
+             
+               <div class="content__block mix category-wordpress" data-order="8">
+                 <img class="content__block_img" src="" alt="">
+                 <a href="#" class="content__block-img">
+                 <button class="button-info" type="submit" >Инфо</button>
+                 <button class="button-demo" type="submit">Демо</button>
+                </a>
+                 
+                 
+                 <div class="content__desc">
+                    
+                     <div class="content__desc-title">
+                         Marketify Coffee Shop    
+                     </div>
+                     
+                     <div class="content__desc-name">
+                        <a href="#"><img class="content__desc-circle" src="img/weekly/user-Ellipse.png" alt="circle"></a>
+                         <div class="content__desc-theme">
+                             AazzTech    
+                         </div>
+                         <a class="content__desc-icon  icon-document-file-psd" href="#">PSD</a>
+                     </div>
+                      
+                    <div class="content__desc-text">
+                         Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque 
+                         the mattis, leo quam aliquet congue.   
+                    </div> 
+                    
+                    <div class="content__item">
+                       
+                        <a href="#" class="content__item-money">
+                            $10-50
+                        </a>
+                        <div class="content__item-like icon-heart">
+                            <span>48</span>
+                        </div>
+                        <div class="content__item-busket icon-shopping-basket">
+                            <span>50</span>
+                        </div>
+
+                        
+                    </div>        
+                        
+                 </div> 
+                   
+             </div> 
+             
+               <div class="content__block mix category-psd" data-order="9">
+                 <img class="content__block_img" src="" alt="">
+                 <a href="#" class="content__block-img">
+                 <button class="button-info" type="submit" >Инфо</button>
+                 <button class="button-demo" type="submit">Демо</button>
+                </a>
+                 
+                 
+                 <div class="content__desc">
+                    
+                     <div class="content__desc-title">
+                        Bryson - Portfolio Template   
+                     </div>
+                     
+                     <div class="content__desc-name">
+                        <a href="#"><img class="content__desc-circle" src="img/weekly/user-Ellipse.png" alt="circle"></a>
+                         <div class="content__desc-theme">
+                             Coder-Lab    
+                         </div>
+                         <a class="content__desc-icon  icon-html-five" href="#">HTML</a>
+                     </div>
+                      
+                    <div class="content__desc-text">
+                         Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque 
+                         the mattis, leo quam aliquet congue.   
+                    </div> 
+                    
+                    <div class="content__item">
+                       
+                        <a href="#" class="content__item-money">
+                            $10
+                        </a>
+                        <div class="content__item-like icon-heart">
+                            <span>56</span>
+                        </div>
+                        <div class="weekly__item-star content__item-star">
+                            <div class="rate-star"></div>
+                        </div>
+                        <div class="content__item-busket icon-shopping-basket">
+                            <span>68</span>
+                        </div>
+
+                        
+                    </div>        
+                        
+                 </div> 
+                   
+             </div>  
+          
+        </div>  
+      </div>     
         <div class="products-new">
-                    <button>Все новые продукты</button>
-               </div>
+          <button type="button" data-filter=".category-new">Все новые продукты</button>
+        </div>
         
     </div>
 </section>       
@@ -977,13 +1238,15 @@
        
     <div class="weekly__title title followers__title ">
      Лента ваших подписчиков
+<!--
      <div class="weekly__button followers__button">
          <button type="button" class="weekly__title-arrows followers__title-arrows">
-             <a href="#" class="weekly__title-chevron  weekly__title-left followers__title-chevron followers__title-left"><i class="fas fa-chevron-left"></i></a> 
+             <a href="#" class="weekly__title-chevron  weekly__title-left followers__title-chevron followers__title-right"><i class="fas fa-chevron-left"></i></a> 
              <a href="#" class="weekly__title-chevron weekly__title-right followers__title-chevron followers__title-right"><i class="fas fa-chevron-right"></i>
              </a>
         </button> 
      </div>    
+-->
 </div>
       
     </div>
@@ -1697,5 +1960,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="js/libs.min.js"></script>
 <script src="js/main.js"></script>
+
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </body>
 </html>
