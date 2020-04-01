@@ -177,18 +177,6 @@
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 .header__menu {
     position: relative;
     margin-right: 20px;
@@ -210,16 +198,14 @@
 
 .header__menu a {
     font-family: 'arial', sans-serif;
-    font-weight: 700;
+    @include f700;
     font-size: 16px;
     text-transform: uppercase;
     padding-top: 9px;
     padding-bottom: 13px;
     height: 61px;
+    color: #000;
 }
-
-
-
 
 
 .header__drop-down.drop-down + .header__link-blog {
@@ -269,6 +255,7 @@
             border-radius: 2px;    
         }
     }
+
 }
 
 .drop-down__list a:hover {
@@ -294,94 +281,81 @@
     transition: all .3s;    
 }
 
+.drop-down__list__mega {
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    z-index: 0;
+    display: flex;
+    position: absolute;
+    top: 49px;
+    left: -590px;
+    width: 1230px;
+    
+    transition: all .3s;
+    background-color: #fff;
+    padding-left: 20px;
+    padding: 19px;
+    line-height: 45px;
+    border-top: 2px solid $light-blue;
+    border-radius: 2px;
+    box-shadow: 0px 1px 10px 0px rgba(172,179,186,0.75);
+    &:hover {    
+    }
+    a {
+        padding: 12px 0px 12px 10px;
+        font-weight: 400;
+        display: block;
+        text-transform: capitalize;
+        transition: .3s;
+        color: #000;  
+        padding-top: 8px;
+
+        &:hover {  
+            padding-left: 10px;
+            color: #fff;
+            width: 230px;
+            background-color: $light-blue;
+            border-radius: 2px;    
+        }
+    }
+
+}
+
+.drop-down__list__mega a:hover {
+    color: #fff;
+}
+
+.header__drop-down .drop-down__list__mega li {
+    margin-left: 0;
+    display: block;
+}
 
 
+.header__drop-down.drop-down:hover .drop-down__list__mega{
+    height: auto;
+    overflow: visible;
+    opacity: 1;
+    transition: all .5s;
+}
 
-
-
-//.header__menu {
-//    position: relative;
-//}
-//
-//.menu {
-//    height: 60px;
-//    position: relative;
-//    
-//    
-//}
-//
-//
-//
-//.drop-down{
-////    position: relative;
-//    text-transform: uppercase;
-//    color: #fff;
-//    @include f700;
-//    font-size: 15px;
-//
-//    display: flex;
-//    li:first-child {
-//        padding-left: 0;
-//    }
-//    li {
-//       
-//        padding-left: 20px;
-//    }
-//    a {
-//        color: #000;
-//          &:hover {
-//            color: $light-blue;
-//        }
-//        
-//    }
-//    .active {
-//         color: $light-blue;
-//    }
-//
-//}
-//
-//
-//.drop-down__list  {
-//    
-////    display: none;
-//    
-//    position: absolute;
-//    left: 1px;
-//    top: 59px;
-//    width: 270px;
-//    height: auto;
-//    transition: all .3s;
-//    background-color: #fff;
-//    padding-left: 20px;
-//
-//    padding: 20px;
-//    line-height: 45px;
-//    border-top: 2px solid $light-blue;
-//    box-shadow: 0px 1px 10px 0px rgba(172,179,186,0.75);
-//    z-index: 1;
-////    overflow: hidden;
-//    &:hover {
-//        
-//    }
-//    a {
-//        color: #000;     
-//        &:hover {
-//            padding-top: 3px;
-//            padding-left: 20px;
-//            color: #fff;
-//            width: 230px;
-//            height: 45px;
-//            background-color: $light-blue;
-//
-//        }
-//    }
-//}
-
-
-
-
-
-
+.menu__list-mart {
+    width: 440px;
+    @include f700;
+    li {
+        width: 220px;
+    }
+      &-title {
+        border-bottom: 1px solid $light-gray;        
+    }
+    &-list {
+        display: flex;
+        padding-top: 20px;
+    }
+    .second-list {
+        padding-left: 20px;
+    }
+}
 
 .menu__list-pages  {
     display: flex;
@@ -410,27 +384,9 @@
     }
 }
 
-.menu__list-mart {
-    width: 465px;
-    @include f700;
-    &-title {
-        border-bottom: 1px solid $light-gray;        
-    }
-  
-    &-list {
-        display: flex;
-        padding-bottom: 55px;
-        @include f500;
-        padding-top: 20px;
-        .first-list {
-            
-            padding-right: 85px;
-        }
-    }
-}
 
 .menu__list-dash {
-    width: 247px;
+    width: 225px;
     @include f700;
     margin-left: 40px;
     &-title {
@@ -463,11 +419,17 @@
         @include f500;
         padding-top: 20px;
         .first-list {
-            
-            padding-right: 85px;
+            width: 165px;
+        }
+        .second-list {
+            margin-left: 60px;
+            width: 155px;
         }
     }
 }
+
+
+
 
 
 .menu__list-items  {
