@@ -290,16 +290,24 @@
             </div>
         </div>
 
-    <div class="header__menu">
+    <nav class="header__menu">
         <div class="container">
-            <nav class="menu">
-              <ul class="menu__list">
-                    <li><a href="#" class="menu__list-main ">Главная</a></li>
+              <ul class="menu">
+                    <li class="header__drop-down drop-down"><a href="drop-down__link" class="">Главная</a>
+                        <ul class="drop-down__list">
+                                <li><a href="#">Home One Multi User
+                                </a></li>
+                                <li><a href="#">Home Two Single User</a></li>
+                                <li><a href="#">Home Three Product</a></li>
+                            </ul>
+                    </li>
+ 
                     <li><a href="#">Все Продукты </a></li>
                     <li><a  href="#">WordPress</a></li>
                     <li><a href="#">Характеристики</a></li>
                     <li><a href="#">Cтраницы</a></li>
                 </ul> 
+                          
 
 <!--
             <div class="menu__list-pages">
@@ -343,7 +351,7 @@
                                 
                 </div>
                 
-                <div class="menu__list-dash">
+             <div class="menu__list-dash">
                     <div class="menu__list-dash-title">
                         Dashboard
                     </div>
@@ -369,7 +377,7 @@
                                 
                 </div>
                 
-               <div class="menu__list-other">
+            <div class="menu__list-other">
                     <div class="menu__list-other-title">
                         Others Pages
                     </div>
@@ -408,7 +416,7 @@
                 </div>
             </div>
 -->
-
+            
 <!--
             <div class="menu__list-items">
                 <ul>
@@ -424,14 +432,9 @@
                 </ul>
             </div>    
 -->
-            <div class="menu__list-home">
-                <ul>
-                    <li><a href="#" class="menu__list-home-multi">Home One Multi User
-                    </a></li>
-                    <li><a href="#">Home Two Single User</a></li>
-                    <li><a href="#">Home Three Product</a></li>
-                </ul>
-            </div>        
+
+                   
+
 <!--
             <div class="menu__list-home menu__list-products">
                 <ul>
@@ -445,6 +448,7 @@
                 </ul>
             </div>
 -->
+
                        
            <div class="header__search ">              
               <form>
@@ -453,11 +457,15 @@
 
                 </button>
             </form>                           
-           </div>               
-            </nav>      
-        </div>
-    </div>
+            </div>      
+            
+            
+    </div>    
+  </nav>      
 
+
+    
+   
     <section class="header__inner">
         <div class="container">
             <div class="header__inner-info">
