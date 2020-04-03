@@ -535,7 +535,7 @@
     .icon-search {
         color: #fff;
         font-size: 15px;
-        
+        cursor: pointer;
     }
 }
 
@@ -673,7 +673,7 @@
       position: absolute;
       bottom: 30px;
       right: 25px;
-      
+      cursor: pointer;
       color: #fff;
       background-color: $light-blue;
       
@@ -1406,69 +1406,120 @@ button.weekly__button-demo {
 .newest-release {
     background-color: $light-gray;
     padding: 110px 0 30px;
-
 }
+
 .newest__products{
     height: 105px;
     background-color: #fff;
-    position: relative;
+   
       &-menu {
         position: absolute;
-        right: 13px;
-        top: 92px;
-          
-        display: block;
-          
+        left: 900px;
+        top: 27px;
         border-radius: 2px;
         width: 200px;
-        height: 200px;
+
         font-size: 15px;
         background-color: #fff;
         padding: 30px 50px 15px 30px; 
         box-shadow: 6px -5px 10px -1px rgba(172,179,186,0.75);
         z-index: 1;
-          &::before {
+        border-top: none; 
+                &::before {
                 content: ''; 
                 position: absolute; 
                 right: 16px; 
                 top: -27px;
                 border: 10px solid transparent; 
                 border-bottom: 17px solid #e7e7e7; 
-          }
-    li {
-        padding-bottom: 5px;
-       }
-       a {
-            &:hover {
-               color: $light-blue;
-                transition: .3s;
-       }   
-    }
-  } 
-    
+      }
+   }  
+}
 
- 
+ul.newest__products-menu.drop-down__list {
+    padding: 0;
+    margin-bottom: 25px;
+    a {
+        color: $text;
+        padding: 8px 0px 0px 37px;
+        
+        &:hover {
+            color: $light-blue;
+            background-color: #fff;
+            transition: all .3s; 
+            width: 200px;
+        }
+
+    }
+    li:last-child {
+      margin-bottom: 9px;
+    }
 }
 
 .newest__products-main {
     position: relative;
+       
         &-filter {
         position: absolute;
         top: -24px;
         right: 6px;
         font-size: 19px;
+        height: 65px;  
+            &:hover {
+                i {
+                  color: $light-blue;      
+                }
+            }    
+
         span {
             padding-left: 10px;
             font-size: 16px;
             color: $medium-gray;
-            &:hover {
-                .newest__products-menu {
-                    display: block;
-                }    
-              }
             }
+     }
+}
+
+.dropdown-content {
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    z-index: 1;
+
+    position: absolute;
+    left: 0px;
+    top: 49px;
+
+    width: 270px;
+
+    transition: all .3s;
+    background-color: #fff;
+    padding-left: 20px;
+    padding: 20px;
+    line-height: 45px;
+    border-top: 2px solid $light-blue;
+    border-radius: 2px;
+    box-shadow: 0px 1px 10px 0px rgba(172,179,186,0.75);
+    &:hover {    
+    }
+    a {
+        padding: 12px 0px 12px 10px;
+        font-weight: 400;
+        display: block;
+        text-transform: capitalize;
+        transition: .3s;
+        color: #000;  
+        padding-top: 8px;
+
+        &:hover {  
+            padding-left: 10px;
+            color: #fff;
+            width: 230px;
+            background-color: $light-blue;
+            border-radius: 2px;    
         }
     }
+
+}
 
 
 
@@ -3764,6 +3815,7 @@ button.membership__block-button-orange {
     .icon-search {
         color: $light-gray;
         font-size: 15px;
+        cursor: pointer;
     }
     
 }
