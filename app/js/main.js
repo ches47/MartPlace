@@ -14,6 +14,14 @@ $(function() {
         prefix: "$"
 });
     
+$('.menu__btn').on('click', function() {
+    $('.menu').slideToggle();
+});
+    
+$('.header__btn-menu').on('click', function() {
+    $('.header__box').toggleClass('active');
+});    
+    
 $('.icon-list2').on('click', function() {
     $('.product__block').addClass('list');
     $('.icon-list2').addClass('active');
@@ -39,7 +47,7 @@ $('.product-one__tabs .tab, settings__tabs .tab').on('click', function(event) {
     
 });
 
- const mixer = mixitup('.content-blocks');
+
 
 $('.weekly__inner').slick({
     autoplay: true,
@@ -49,5 +57,7 @@ $('.weekly__inner').slick({
 });
 
 
+//MixItUp LAST!
+const mixer = mixitup('.content-blocks');
 
 

@@ -2,6 +2,7 @@
 @import '_global';
 @import '_fonts';
 
+
 //header
 .header__top {
     width: 100%;
@@ -87,7 +88,6 @@
         &:hover {
         .user__menu {
             height: auto;
-            
             padding: 20px;
             overflow: auto;
         }
@@ -135,7 +135,7 @@
 
 .user__menu {
     position: absolute;
-    right: -90px;
+    right: -15px;
     top: 81px;
     width: 270px;
     height: 0;
@@ -144,7 +144,7 @@
     padding-left: 20px;
     
     line-height: 60px;
-    border-top: 2px solid $light-blue;
+    
     box-shadow: 0px 1px 10px 0px rgba(172,179,186,0.75);
     z-index: 1;
     overflow: hidden;
@@ -158,6 +158,10 @@
         border: 12px solid transparent;
         border-bottom-color: $light-blue;
     }
+    &:hover {
+        border-top: 2px solid $light-blue;
+    }
+    
     a {
         &:hover {
             padding: 15px;
@@ -165,6 +169,7 @@
             width: 230px;
             height: 45px;
             background-color: $light-blue;
+            
         }
     }
     
@@ -179,7 +184,6 @@
 
 .header__menu {
     position: relative;
-    margin-right: 20px;
     .menu {
     height: 60px;
         li {
@@ -507,7 +511,7 @@
 
 .header__search {
     position: absolute;
-    top: -10px;
+    top: 0px;
     right: 145px;
     input {
         display: block;
@@ -525,7 +529,7 @@
     button {
         position: absolute;
         top: 0;
-        right: -42px;
+        right: 0px;
         width: 70px;
         height: 41px;
         background-color: $light-blue;
@@ -682,6 +686,12 @@
           transition: 0.5s;
       }
    }      
+}
+
+//СЮДА.header__menu
+.header__btn-menu,
+ {
+    display: none;
 }
 
 .basket__menu {
@@ -2355,7 +2365,8 @@ button.button-demo {
 
 //footer
 footer {
-    height: 525px;
+    padding-top: 100px;
+    height: auto;
     background-color: #262b30;
 }
 .footer__copy {
@@ -2374,7 +2385,7 @@ footer {
 
 .footer__inner {
     color: $light-gray;
-    padding: 110px 0;
+    margin-bottom: 125px;
     display: flex;
     justify-content: space-between;
 }
@@ -2398,17 +2409,21 @@ footer {
 
 .footer__col-menu {
     max-width: 200px;
-    margin-left: 50px;
+//    margin-left: 50px;
 }
 .footer__col {
     &-title {
         color: #fff;
-        font-size: 18px;
+        font-size: 20px;
+        @include f700;
         padding-bottom: 50px;
   }
     &-list a {
         line-height: 34px;
         color: $light-gray;
+        &:hover {
+            text-decoration: underline;
+        }
     }
 
 }
@@ -2431,13 +2446,14 @@ footer {
         button {
         position: absolute;
         top: 0;
-        right: 10px;    
+        left: 190px;    
         width: 111px;
         color: #fff;
         height: 50px;
         background-color: $light-blue;
         border-radius: 40px;
         border: none;
+        cursor: pointer;
     }
   }
 }
@@ -2452,6 +2468,7 @@ footer {
     li {
       padding-right: 15px;
     }
+   
 }
 
 //slider-search
@@ -4052,7 +4069,7 @@ button.membership__block-button-orange {
 }
 
 
-
+@import 'media';
 
 
 
