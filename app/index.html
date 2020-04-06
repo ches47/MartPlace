@@ -16,7 +16,7 @@
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 
 </head>
-<body>
+<body class="page-mart">
  
  <div class="wrapper">
  <div class="content">
@@ -28,11 +28,11 @@
     <div class="header__top">
         <div class="container">  
             <div class="header__top-inner">
-                <div class="header__logo">
+                <div class="header__logo" >
                     <a href="#"><img src="img/MartPlace-logo.png" alt="MartPlaceShop"></a>
                 </div>
 
-                <div class="header__box">
+                <div class="header__box" >
                    
                     <a href="#" class="header__btn header__btn-login">Стать продавцом</a>
                     
@@ -346,7 +346,7 @@
                     <li class="header__drop-down drop-down">
                         <a href="drop-down__link" class="">Страницы</a>
                         
-                    <ul class="drop-down__list__mega">
+                    <ul class="drop-down__list__mega" style="display: none">
                         
                       <div class="menu__list-mart">
                           
@@ -480,15 +480,18 @@
                 </div>
             </div>
 
-            <div class="header__blocks">  
+            <div class="header__blocks" >  
               <div class="header__block-first">
-                  <div class="header__block-second">
+                <div class="header__block-second">
+                </div>
                       <div class="header__block-third">
                         <form >
                         <div class="header__block">  
                           <div class="header__block-search">
-                           <input type="text" placeholder="Поиск товара..." required>
-                            <div class="header__block-category">
+                            <div class="header__block-input"> 
+                               <input type="text" placeholder="Поиск товара..." required>
+                            </div>    
+                                <div class="header__block-category">
                                 Все Категории
                                 <a href="#"></a>
                             </div>
@@ -505,13 +508,14 @@
                   </div>
               </div>
 
-            </div>
+            
 
         </div>    
     </section>
 
     
 </header>  
+
 
 <section class="choose-foxtar">
     <div class="container">
@@ -560,7 +564,7 @@
         </div>
     </div>
 </section> 
-
+<!--
 <section class="weekly-products">
    <div class="weekly__wrapper">
     <div class="container">
@@ -1832,10 +1836,11 @@
         </div>
     </div>
 </section> 
+-->
   
 </div>    
     
-<footer class="footer">
+<footer class="footer" style="display: none">
    <div class="footer__content">
     <div class="container">
     
@@ -1952,7 +1957,15 @@
       </div>   
   </div>       
 </footer>      
-</div>    
+</div>  
+  
+  
+  
+<button class="up-button" type="button">
+    ↑
+    <span class="visually-hidden"></span>
+</button>
+
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

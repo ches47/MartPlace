@@ -12,18 +12,31 @@
     .footer__col.footer__col-menu {
         margin-left: 0;
     }
+    
+    .header__block input {
+        width: 400px;
+        left: 250px;
+    }
+}
+
+@media (max-width: 1070px) { 
+    .header__inner-title {
+        font-size: 40px;
+    }
+    .header__inner-title p {
+        font-size: 16px;
+        line-height: 43px;
+    }
 }
 
 @media (max-width: 1140px) { 
     .header__search input {
         width: 235px;
     }
-    .header__menu a {
-        font-size: 13px;
-    }
 }
 
-@media (max-width: 990px) { 
+
+@media (max-width: 1110px) { 
     .menu {
         display: none;
         position: absolute;
@@ -40,7 +53,7 @@
         }
 
         li {
-            background-color: $blue; 
+            background-color: $violet; 
             & + li {
                 margin-left: 0;
             }
@@ -96,6 +109,17 @@
     .footer__inner {
         margin-bottom: 70px;
     }
+    .header__block .header__block-category {
+        right: 300px;
+    }
+    .header__block-button {
+        width: 120px;
+        right: 180px;
+    }
+    .header__block input {
+        width: 200px;
+        left: 400px;
+    }
 }
 
 @media (max-width: 800px) { 
@@ -103,6 +127,17 @@
         display: none;
     }
 }
+
+@media (max-width: 750px) { 
+    .header__block .header__block-category {
+        display: none;
+    }
+    .header__block input {
+        left: 640px;
+  }
+}
+
+
 
 @media (max-width: 620px) { 
     .bell-box,
@@ -125,12 +160,32 @@
     }
      .menu__btn {
         position: absolute;
-        bottom: 85px;
+        bottom: 107px;
     }
     .menu {
         top: -35px;
     }
+    .header__inner {
+        margin-top: -58px;
+    }
     
+}
+
+@media (max-width: 603px) { 
+    
+    .header__inner-buttons button:first-child {
+         margin-left: 20px; 
+         margin-bottom: 18px;
+    }
+    
+    .header__block-button {
+        right: 120px;
+  }
+    
+   .header__block input {
+        left: 696px;
+    }
+
 }
 
 
@@ -177,7 +232,7 @@
         height: 75px;
     }
     .menu__btn {
-        bottom: 60px;
+        bottom: 84px;
     }
     .user__menu {
             top: 62px;
@@ -234,37 +289,8 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //MIN
-@media (min-width: 991px) { 
+@media (min-width: 1111px) { 
     .menu {
         display: block !important;
     }
