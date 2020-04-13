@@ -69,8 +69,8 @@ $('.product-one__tabs .tab, settings__tabs .tab').on('click', function(event) {
 
 
 $('.weekly__inner').slick({
-    autoplay: true,
-    autoplaySpeed: 2000,
+//    autoplay: true,
+//    autoplaySpeed: 2000,
     prevArrow: '<a href="#" class="weekly__title-chevron  weekly__title-right"><i class="fas fa-chevron-left"></i></a>', 
     nextArrow: '<a href="#" class="weekly__title-chevron  weekly__title-left"><i class="fas fa-chevron-right"></i></a>', 
 });

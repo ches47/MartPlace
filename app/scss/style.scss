@@ -1424,11 +1424,10 @@ button.weekly__button-demo {
 .newest__products{
     height: 105px;
     background-color: #fff;
-   
       &-menu {
         position: absolute;
-        left: 900px;
-        top: 27px;
+        left: -88px;
+        top: 58px;
         border-radius: 2px;
         width: 200px;
 
@@ -1448,6 +1447,13 @@ button.weekly__button-demo {
       }
    }  
 }
+
+
+.newest__products.title {
+           display: flex;
+           justify-content: space-between;
+           position: relative;
+       }
 
 ul.newest__products-menu.drop-down__list {
     padding: 0;
@@ -1473,9 +1479,9 @@ ul.newest__products-menu.drop-down__list {
     position: relative;
        
         &-filter {
-        position: absolute;
-        top: -24px;
-        right: 6px;
+//        position: absolute;
+//        top: -21px;
+//        right: 6px;
         font-size: 19px;
         height: 65px;  
             &:hover {
@@ -1547,9 +1553,10 @@ ul.newest__products-menu.drop-down__list {
     
     &__inner-buttons {
         background-color: #fff;
-        height: 90px;
-        padding: 25px;
-        margin-bottom: 20px;
+        height: auto;
+        padding: 35px;
+        text-align: center;
+        
     }
     button {
         margin-right: 10px;
@@ -1557,6 +1564,7 @@ ul.newest__products-menu.drop-down__list {
         border: none;
         width: 120px;
         height: 40px;
+        margin-bottom: 20px;
         background-color: $light-gray;
         color: $medium-gray;
         &:hover {
@@ -2120,7 +2128,7 @@ button.button-demo {
     position: absolute;
     top: 110px;
     left: 100px;
-    width: 600px;
+    width: 500px;
     text-align: center;
     &-title {
         padding-top: 45px;
@@ -2153,7 +2161,7 @@ button.button-demo {
     position: absolute;
     top: 110px;
     right: 100px;
-    width: 600px;
+    width: 400px;
     text-align: center;
     &-title {
         padding-top: 45px;
@@ -2335,7 +2343,7 @@ button.button-demo {
 ///join-our
 .join-our {
     background: linear-gradient(to top right, #8E2DE2, #4A00E0);;
-    height: 400px;
+    height: 450px;
 }
 .ready__join {
     color: #fff;
