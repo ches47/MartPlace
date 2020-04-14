@@ -14,7 +14,7 @@
 </head>
 <body>
  
-<header class="header">
+<header class="header" style="display: none">
     <div class="header__top">
         <div class="container">  
             <div class="header__top-inner">
@@ -475,14 +475,16 @@
 
 <section  class="filter-bar">
     <div class="container">
-        <div class="filter-product ">
+        <div class="filter-product">
+          
+         <div class="filter-product__link"> 
            <a href="#" class="active">
-            Новые Продукты
-            </a>
-            <a href="#">
-            <span>Популярный Продукты</span>
-            </a>
-       
+                Новые Продукты
+           </a>
+           <a href="#">
+                <span>Популярный Продукты</span>
+           </a>
+        </div>
 
         <div class="filter__elements">
            
@@ -1274,7 +1276,14 @@ Bundle
           </div>      
       </div>   
   </div>       
-</footer>  
+</footer>
+
+
+<button class="up-button" type="button" style="display: none">
+    ↑
+  <span class="visually-hidden"></span>
+</button>  
+      
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="js/libs.min.js"></script>

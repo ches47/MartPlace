@@ -45,6 +45,9 @@
     .why__martplace-objects {
         justify-content: center;
     }
+    .product-page__arrows-left {
+        text-align: left;
+    }
 
 }
 
@@ -139,6 +142,17 @@
         flex-wrap: wrap;
         justify-content: center;
     }
+    .filter-product__link {
+        display: grid;
+        line-height: 30px;
+        span {
+           padding-left: 0; 
+           margin-top: 5px;
+        }
+    }
+    .filter-bar {
+        height: 165px;
+    }
 }
 
 
@@ -204,7 +218,19 @@
     .ready__join-title {
         line-height: 34px;
     }
+    .filter__elements-page {
+        display: none;
+    }
 }
+
+@media (max-width: 654px) { 
+    .page__arrows-block button {
+        width: 32px;
+        height: 29px;
+    }
+}
+
+
 
 
 
@@ -238,6 +264,16 @@
         margin-top: -58px;
     }
     
+    
+    .product-page__aside {
+        display: none;
+    }
+    
+    .product-page__arrows-left {
+        text-align: center;
+    }
+
+    
 }
 
 @media (max-width: 603px) { 
@@ -253,6 +289,13 @@
     
    .header__block input {
         left: 696px;
+    }
+    .slider__info-text {
+        line-height: 30px;
+    }
+    
+    .product-page__items {
+        justify-content: center;
     }
 
 }
@@ -366,6 +409,9 @@
     }
     .fact__block-number {
         font-size: 27px;
+    }
+    .filter__elements-price {
+        display: none;
     }
 }
 
