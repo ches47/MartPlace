@@ -132,6 +132,9 @@
     .why__choose-text {
         text-align: center;
     }
+    .product__desc-title {
+        font-size: 18px;
+    }
 }
 
 @media (max-width: 1000px) { 
@@ -152,6 +155,9 @@
     }
     .filter-bar {
         height: 165px;
+    }
+    .product-page__aside {
+        display: none;
     }
 }
 
@@ -182,6 +188,7 @@
         width: 200px;
         left: 400px;
     }
+
 }
 
 @media (max-width: 800px) { 
@@ -220,6 +227,9 @@
     }
     .filter__elements-page {
         display: none;
+    }
+    .product__block.list .product__desc {
+        height: 270px;
     }
 }
 
@@ -413,6 +423,20 @@
     .filter__elements-price {
         display: none;
     }
+    .account-block__data input {
+        width: 60%;
+    }
+    .account-block__data {
+        text-align: center; 
+    }
+    .account-block__lost {
+        padding-left: 0px;
+        text-align: center;  
+    }
+    .account-block__button {
+        padding-left: 0px;
+        text-align: center; 
+    }
 }
 
 @media (max-width: 420px) {
@@ -423,6 +447,10 @@
     .clients__block  {
         height: 285px;
     }
+    .account-block__welcome-text {
+        font-size: 17px;
+    }
+    
 }
 
 @media (max-width: 380px) {
