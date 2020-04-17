@@ -3417,8 +3417,9 @@ footer {
     &__submit-text {
             text-align: left;
             font-size: 16px;
-            width: 490px;
-            padding-left: 70px;
+            max-width: 490px;
+            padding: 0 34px;
+            padding-bottom: 20px;
         }
     
 }
@@ -3464,7 +3465,7 @@ footer {
 }
 
 .account-block__button {
-    padding-left: 80px;
+    
     button {
         width: 185px;
         height: 55px;
@@ -3483,6 +3484,7 @@ footer {
 
 .account-block__submit {
     padding-top: 45px;
+    text-align: center;
 }
 
 .account-button__register {
@@ -3660,11 +3662,11 @@ button.membership__block-button-orange {
 //terms-use
 .terms-use {
     background-color: $light-gray;
-    height: 1750px;
-    padding-top: 60px;
+    // height: 1750px;
+    padding: 60px 0;
 }
 .term {
-    width: 1150px;
+    // width: 1150px;
     background-color: #fff;
     padding-left: 30px;
     
@@ -3676,10 +3678,12 @@ button.membership__block-button-orange {
             padding-bottom: 30px;
             @include f700;
             font-size: 24px;
+            line-height: 28px;
             border-bottom: 1px solid $light-gray;
         }
         &-text {
             padding-top: 20px;
+            padding-right: 20px;
             padding-bottom: 50px;
             max-width: 1085px;;
         }
