@@ -123,6 +123,9 @@
     .pricing {
         padding: 60px 0;
     }
+    .product-page__arrows {
+        text-align: center;
+    }
 }
 
 @media (max-width: 1070px) { 
@@ -141,6 +144,9 @@
     }
     .product__desc-title {
         font-size: 18px;
+    }
+    .products-blocks {
+        padding-bottom: 60px;
     }
 }
 
@@ -166,6 +172,7 @@
     .product-page__aside {
         display: none;
     }
+    
 }
 
 
@@ -194,6 +201,9 @@
     .header__block input {
         width: 200px;
         left: 400px;
+    }
+    .filter__elements-page {
+        display: none;
     }
 
 }
@@ -251,6 +261,9 @@
     }
     .account-block__welcome-text {
         font-size: 16px;
+    }
+    .filter__elements-price {
+        display: none;
     }
      
 }
@@ -461,7 +474,9 @@
     .checkbox-transform {
         font-size: 17px;
     }
-
+    .filter__elements {
+        padding-left: 15px;
+    }
 }
 
 @media (max-width: 420px) {
@@ -480,6 +495,12 @@
     }
     .account-block__welcome-title {
         font-size: 18px;
+    }
+    .filter-product_found {
+        font-size: 16px;    
+    }
+    .filter__element {
+        font-size: 14px;
     }
 }
 
@@ -555,7 +576,10 @@
     .membership__block-button button {
         width: 240px;
     }
-    
+    .filter__element {
+        height: 65px; 
+    }
+
 }
 
 

@@ -2552,7 +2552,7 @@ footer {
 .filter-product {
     padding-top: 20px;
     display: flex;
-    
+    justify-content: center;
     &__link {
         padding-top: 10px;
     }
@@ -2564,6 +2564,7 @@ footer {
         padding-left: 50px; 
     }
     &_found {
+        padding-top: 10px;
         font-size: 20px;
         .num {
             @include f700;
@@ -2909,7 +2910,7 @@ footer {
 
 //author-sell Block
 .author-sell {
-    height: 280px;
+    height: auto;
 }
 
 .author-works {
@@ -3507,7 +3508,7 @@ footer {
 
 //create-work
 .create-work {
-    height: 550px;
+    height: auto;
     background-color: #fff;
 }
 
@@ -3517,7 +3518,7 @@ footer {
 
 .create-free {
     display: flex;
-    padding-top: 95px;
+    padding: 95px 0;
     
     &__about {
         padding-top: 30px;
