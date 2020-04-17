@@ -245,6 +245,14 @@
         width: 32px;
         height: 29px;
     }
+    .account-block__welcome-title {
+        line-height: 30px;    
+        font-size: 26px;   
+    }
+    .account-block__welcome-text {
+        font-size: 16px;
+    }
+     
 }
 
 
@@ -444,6 +452,16 @@
         padding-left: 0px;
         text-align: center; 
     }
+    .account-block__button button {
+        width: 120px;   
+    }
+    .account-block__lost p {
+        font-size: 14px;
+    }
+    .checkbox-transform {
+        font-size: 17px;
+    }
+
 }
 
 @media (max-width: 420px) {
@@ -455,10 +473,13 @@
         height: 285px;
     }
     .account-block__welcome-text {
-        font-size: 17px;
+        font-size: 13px;
     }
     .submit-block {
         height: 510px;
+    }
+    .account-block__welcome-title {
+        font-size: 18px;
     }
 }
 
@@ -495,6 +516,10 @@
     }
     .support__guarentee-text {
         font-size: 18px;
+    }
+    .checkbox__label:after {
+        width: 24px; 
+        height: 24px;
     }
     
 }

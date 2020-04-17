@@ -16,7 +16,7 @@
  
  <div class="wrapper">
    <div class="content">
-<header class="header">
+<header class="header" style="display: none;">
     <div class="header__top">
         <div class="container">  
             <div class="header__top-inner">
@@ -94,8 +94,8 @@
 <section class="login-back">
     <div class="container">
         <div class="account-block">
-            
-            <div class="account-block__welcome">
+                        
+             <div class="account-block__welcome">
                 <div class="account-block__welcome-title">
                     Добро пожаловать снова
                 </div>
@@ -104,7 +104,7 @@
                 </div>
             </div>
             
-            <div class="account-block__data">
+             <div class="account-block__data">
                
                 <div class="account-block__data-user">
                     Имя Пользователя
@@ -116,12 +116,14 @@
                 </div>
                 <input type="text" placeholder="Enter your password..." required>
             </div>
-            
+             
             <div class="account-block__remember">
                  <div class="aside__price-license-name aside__price-license-multi">
                               <label class="checkbox-transform">
                 <input type="checkbox" class="checkbox__input"> 
-                <span class="checkbox__label">Запомните меня </span>
+                <span class="checkbox__label">
+                    <span class="checkbox__label-text">Запомните меня </span>
+                </span>
                          </label>
                          </div>
             </div>
@@ -131,9 +133,13 @@
             </div>
             
             <div class="account-block__lost">
-                Потеряли свое <span>имя польз.</span> или <span>пароль</span>?&nbsp
+                <p>
+                    Потеряли свое <span>имя польз.</span> или <span>пароль</span>?&nbsp
                 У вас нет<span> аккаунта?</span>
-            </div>
+                </p>
+            </div>  
+
+
       </div>      
     </div>
 </section>      
