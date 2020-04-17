@@ -2039,6 +2039,7 @@ button.button-demo {
     &-title {
         text-align: center;
         font-size: 36px;
+        line-height: 40px;
         padding-bottom: 30px;
     
     span {
@@ -3559,8 +3560,8 @@ footer {
 //pricing
 .pricing {
     background-color: $light-gray;
-    height: 980px;
-    padding-top: 110px;
+    height: auto;
+    padding: 110px 0;
 }
 
 .pricing__simple-text {
@@ -3570,6 +3571,7 @@ footer {
 .membership {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .membership__block {

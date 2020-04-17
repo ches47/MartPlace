@@ -116,6 +116,13 @@
             }
         }
     }
+
+    .membership__block {
+        margin-bottom: 50px;       
+    }
+    .pricing {
+        padding: 60px 0;
+    }
 }
 
 @media (max-width: 1070px) { 
@@ -519,6 +526,9 @@
     }
     .clients__block-img {
             display: none;
+    }
+    .membership__block-button button {
+        width: 240px;
     }
     
 }
