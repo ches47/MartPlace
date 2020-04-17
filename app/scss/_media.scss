@@ -48,7 +48,9 @@
     .product-page__arrows-left {
         text-align: left;
     }
-
+    .contact-blocks {
+        flex-wrap: wrap;
+    }
 }
 
 
@@ -207,6 +209,13 @@
     }
 
 }
+
+@media (max-width: 850px) { 
+    .contact-leave__form textarea {
+        max-width: 275px;
+    }
+}
+
 
 @media (max-width: 800px) { 
     .header__btn {
@@ -419,6 +428,9 @@
      .clients__reviews button {
         right: 25%;
     }
+    .contact-blocks__text {
+        padding-left: 25px;
+    }
 }
 
 @media (max-width: 510px) { 
@@ -477,6 +489,7 @@
     .filter__elements {
         padding-left: 15px;
     }
+
 }
 
 @media (max-width: 420px) {
@@ -501,6 +514,9 @@
     }
     .filter__element {
         font-size: 14px;
+    }
+    .contact-leave__title {
+        font-size: 21px;    
     }
 }
 
@@ -541,6 +557,9 @@
     .checkbox__label:after {
         width: 24px; 
         height: 24px;
+    }
+    .contact-blocks__text {
+        padding-left: 30px;
     }
     
 }
