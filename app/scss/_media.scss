@@ -51,6 +51,25 @@
     .contact-blocks {
         flex-wrap: wrap;
     }
+    .blog__inner {
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+    }
+    .blog__search {
+        width: 100%;
+    }
+    .blog__aside {
+        width: 100%;
+    }
+    .aside__category {
+        width: 100%;         
+    }
+    .blog__search-push {
+        width: 100%;
+    }
+    .blog__search-banner {
+        text-align: center;
+    }
 }
 
 
@@ -270,6 +289,7 @@
     }
     .account-block__welcome-text {
         font-size: 16px;
+        padding-top: 20px;
     }
     .filter__elements-price {
         display: none;
@@ -483,7 +503,7 @@
         text-align: center; 
     }
     .account-block__button button {
-        width: 120px;   
+        // width: 120px;   
     }
     .account-block__lost p {
         font-size: 14px;
@@ -507,6 +527,7 @@
     }
     .account-block__welcome-text {
         font-size: 13px;
+      
     }
     .submit-block {
         height: 510px;
@@ -522,6 +543,14 @@
     }
     .contact-leave__title {
         font-size: 21px;    
+    }
+    .blog__search-banner {
+        img {
+            max-width: 270px;
+        }
+    }
+    .blog__search input {
+        width: 210px;    
     }
 }
 
@@ -566,7 +595,16 @@
     .contact-blocks__text {
         padding-left: 30px;
     }
-    
+    .blog__search-push {
+        text-align: center;
+    }
+    .blog__search-title span {
+        padding-left: 10px;
+
+    }
+    .blog__search-block-text {
+        padding-right: 20px;
+    }
 }
 
 

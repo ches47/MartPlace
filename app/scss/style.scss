@@ -3391,7 +3391,7 @@ footer {
 }
 
 .submit-back {
-    height: 655px;
+    height: auto;
 }
 
 .account-block {
@@ -3427,11 +3427,13 @@ footer {
 }
 
 .account-block__register {
-    height: 930px;
+    // height: 930px;
+    padding-bottom: 50px;
 }
 
 .submit-block {
-    height: 455px;
+    // height: 455px;
+    padding-bottom: 50px;
     
 }
 
@@ -3708,10 +3710,13 @@ button.membership__block-button-orange {
         display: flex;    
     }
     &__content {
-        max-width: 750px;    
+        width: 100%;    
     }
     &__content-block-img {
         margin-bottom: -5px;
+        img {
+            width: 100%;
+        }
     }
     &__content-main {
         background-color: #fff;
@@ -3771,9 +3776,7 @@ button.membership__block-button-orange {
             }
         }
     &-text {
-        padding: 20px 0;
-        
-        width: 690px;
+        padding: 20px 10px;
       }
     &-button {
         padding-bottom: 40px;
@@ -3835,8 +3838,9 @@ button.membership__block-button-orange {
     padding-bottom: 30px;
     margin-bottom: 30px;
     border-radius: 3px;
-    &-post {
-        position: relative;
+    form {
+        max-width: 320px;
+        position: relative;    
     }
         
     input {
@@ -3853,8 +3857,8 @@ button.membership__block-button-orange {
     }
     button {
         position: absolute;
-        top: 19px;
-        right: 39px;
+        top: 0px;
+        right: 30px;
         width: 70px;
         height: 41px;
         background-color: $light-blue;
@@ -3871,10 +3875,11 @@ button.membership__block-button-orange {
 
 .blog__search-push {
     margin-top: -29px;
-    height: 245px;
+    padding-bottom: 30px;
     background-color: #fff;
     padding-top: 20px;
     padding-left: 20px;
+    width: 360px;
     button {
             margin-right: 10px;
             margin-bottom: 10px;
@@ -3894,7 +3899,7 @@ button.membership__block-button-orange {
 }
 
 .blog__search-banner {
-    padding-top: 30px;
+    padding: 30px 0;
 }
 
 .blog__search-blocks {
