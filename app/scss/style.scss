@@ -2911,14 +2911,13 @@ footer {
 
 .author-works {
     text-align: center;
-    line-height: 60px;
+    line-height: 45px;
     &__title {
         font-size: 30px;
         @include f700;
     }
     &__sell {
         font-size: 24px;
-        padding-bottom: 30px;
         font-weight: 300;
     }
     &__home {
@@ -3528,9 +3527,11 @@ footer {
     &__about {
         padding-top: 30px;
         padding-left: 230px;
+        min-width: 320px;
     }
     &__total {
         font-size: 30px;
+        line-height: 34px;
         @include f500;
         padding-bottom: 30px;
     }
@@ -3558,6 +3559,9 @@ footer {
     }
     &__img__layer {
         padding-left: 220px;
+    }
+    img {
+        width: auto;
     }
 }
 

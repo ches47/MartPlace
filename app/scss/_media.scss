@@ -10,7 +10,15 @@
     }
     .latest-blocks {
         flex-wrap: wrap;
-        
+    }
+    .create-free {
+        flex-wrap: wrap;
+    }
+    .create-free__upload {
+        padding: 100px;
+    }
+    .create-free img {
+        width: 100%;
     }
 
 }
@@ -297,6 +305,15 @@
     }
     .product__block.list .product__desc {
         height: 270px;
+    }
+    .create-free__upload {
+        padding: 40px;
+    }
+    .create-free__about {
+        padding-left: 0px;
+    }
+    .create-free__img__layer {
+        padding-left: 0px;
     }
 }
 
