@@ -2731,9 +2731,6 @@ footer {
 
 .price-range {
     
-    form {
-
-    }
     button {
         margin-top: 65px;
 
@@ -2885,7 +2882,6 @@ footer {
 //corporate
 .corporate {
     width: 100%;
-    height: 180px;
     background: linear-gradient(to top right, #8E2DE2, #4A00E0);
     padding: 60px 0;
     color: #fff;
@@ -2943,14 +2939,18 @@ footer {
     background-color: $light-gray;
     &__inner {
         display: flex;
+
     }
     
     &__content {
         max-width: 755px;
-        
+        width: 100%;
     }
     &__img-inner {
             margin-bottom: -4px;
+            img {
+                width: 100%;
+            }
     }
     .product-one__live {
         margin-right: 30px;
@@ -3088,6 +3088,9 @@ footer {
         .fa-check {
             padding-right: 10px;
         }
+        img {
+            width: 100%;
+        }
         span{
              padding-right: 10px;
             font-size: 17px;
@@ -3101,7 +3104,7 @@ footer {
 }
 .aside__price {
     background-color: #fff;
-    width: 365px;
+    min-width: 260px;
     &-total {
         height: 105px;
         background-color: $light-blue;
@@ -3145,8 +3148,8 @@ footer {
 .checkbox__label:after {
     content: ' ';
     display: block;
-    height: 30px;
-    width: 30px;
+    height: 25px;
+    width: 25px;
     border: .35rem solid $light-gray;
     transition: 200ms;
     position: absolute;
@@ -3197,7 +3200,7 @@ footer {
 }
 
 .aside__price-license-buttons {
-    
+    text-align: center;
     button {
         width: 300px;
         height: 55px;
@@ -3295,7 +3298,6 @@ footer {
     border: 1px solid #dedede;
     padding: 0 30px 30px;
     
-    width: 365px;
     margin-bottom: 30px;
     &-title {
         text-align: center;
@@ -3329,8 +3331,9 @@ footer {
     border: 1px solid #dedede;
     padding: 0 30px 30px;
     text-align: center;
-    width: 365px;
     margin-bottom: 30px;
+    
+
     &-name {
         padding-top: 20px;
         padding-bottom: 20px;
@@ -3958,6 +3961,10 @@ button.membership__block-button-orange {
     &-place {
         font-size: 20px;
     }
+}
+
+.corporate-main__name {
+    line-height: 34px;
 }
 
 .contact {
