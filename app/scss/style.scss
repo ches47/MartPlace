@@ -303,7 +303,7 @@
     height: 0;
     overflow: hidden;
     opacity: 0;
-    z-index: 0;
+    z-index: 2;
     display: flex;
     position: absolute;
     top: 49px;
@@ -1297,7 +1297,7 @@ span.icon-bin {
 .slick-arrow {
     position: absolute;
     top: -70px;
-    right: 14px;
+    right: 15px;
     padding-top: 3px;
     background-color: #7347c1;
     border-radius: 20px;
@@ -1311,11 +1311,15 @@ span.icon-bin {
 }
 
 .weekly__title-left{
-    width: 44px;
+    width: 48px;
 }
 
 .weekly__title-right {
     right: 38px;
+}
+.fa-chevron-left:before {
+    position: absolute;
+    left: 14px;
 }
 
 
@@ -1497,8 +1501,9 @@ ul.newest__products-menu.drop-down__list {
         font-size: 19px;
         height: 65px;  
             &:hover {
-                i {
-                  color: $light-blue;      
+                i{
+                  color: $light-blue;  
+  
                 }
             }    
 
@@ -3449,7 +3454,7 @@ footer {
 }
 
 .submit-block {
-    // height: 455px;
+     height: auto;
     padding-bottom: 50px;
     
 }
@@ -4131,6 +4136,10 @@ button.membership__block-button-orange {
             }
     }
     }
+}
+
+.free_vpn_container {
+    display: none;
 }
 
 
