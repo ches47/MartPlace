@@ -184,21 +184,33 @@
 
 .header__menu {
     position: relative;
-    padding-bottom: 24px;
+    // padding-bottom: 24px;
     .menu {
     height: 60px;
         li {
             display: inline;    
         }
-        
+    li.drop-down__arrow {
+        position: relative;
+        &::after {
+            content: "\f0dd"; 
+            position: absolute;
+            bottom: 1px;
+            right: -11px;
+            font-family: FontAwesome;
+            font-weight: 700;
+            &:hover {
+                background-color: #0674ec;
+            }
+        }
+    }    
   } 
     
 }
 
 
-
 .header__menu li + li{
-    margin-left: 30px;
+    margin-left: 35px;
 }
 
 .header__menu a {
@@ -210,6 +222,7 @@
     padding-bottom: 13px;
     height: 61px;
     color: #000;
+  
 }
 
 
@@ -294,8 +307,8 @@
     display: flex;
     position: absolute;
     top: 49px;
-    left: -590px;
-    width: 1230px;
+    left: -642px;
+    width: 1130px;
     
     transition: all .3s;
     background-color: #fff;
@@ -319,7 +332,7 @@
         &:hover {  
             padding-left: 10px;
             color: #fff;
-            width: 230px;
+            width: 160px;
             background-color: $light-blue;
             border-radius: 2px;    
         }
@@ -403,10 +416,7 @@
         padding-bottom: 55px;
         @include f500;
         padding-top: 20px;
-        .first-list {
-            
-            padding-right: 85px;
-        }
+
     }
 }
 
@@ -1163,7 +1173,7 @@ span.icon-bin {
     }
   
 }
-ш
+
 //weekly-products
 .weekly-products {
     background-color: #cdd5e5;
@@ -1246,14 +1256,15 @@ span.icon-bin {
 }
 
 .weekly__inner-box {
-    position: relative;
+    display: flex !important; 
+    justify-content: center;
 }
 
 .weekly__inner {
     padding-top: 50px;
     &-box {
         height: 450px;
-        background-color: #fff;
+        
     }
     &-img {
         background-color: $medium-gray;
@@ -1286,7 +1297,7 @@ span.icon-bin {
 .slick-arrow {
     position: absolute;
     top: -70px;
-    right: 17px;
+    right: 14px;
     padding-top: 3px;
     background-color: #7347c1;
     border-radius: 20px;
@@ -1296,6 +1307,7 @@ span.icon-bin {
     cursor: pointer;
     color: white;
     text-align: center;
+    font-family: "FontAwesome";
 }
 
 .weekly__title-left{
@@ -1331,12 +1343,12 @@ button.weekly__button-demo {
 .weekly__inner {
     position: relative;
     &-content {
-        padding: 40px 0 25px;
-        width: 500px;
-        
-        position: absolute;
-        top: 10px;
-        right: 35px;
+        padding-top: 45px;
+        padding: 25px;
+        background-color: #fff;
+        max-width: 550px;
+        width: 100%;
+        height: 450px;
     }
     &-title {
         font-size: 21px;
@@ -2320,7 +2332,7 @@ button.button-demo {
 
 }
 .support__guarentee {
-        height: 300px;
+        height: auto;
         padding-top: 45px;
         padding-bottom: 45px;
         text-align: center;
@@ -2328,6 +2340,9 @@ button.button-demo {
         justify-content: space-around;
     &-img {
         padding-bottom: 20px;
+        img {
+            width: 40%;
+        }
     }
     &-text {
         font-size: 24px;
