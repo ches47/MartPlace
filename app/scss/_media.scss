@@ -20,6 +20,9 @@
     .create-free img {
         width: 100%;
     }
+    // .up-button {
+    //     right: 520px;
+    // }
 
 }
 
@@ -77,6 +80,10 @@
     }
     .blog__search-banner {
         text-align: center;
+        img {
+            max-width: 1000px;
+             width: 100%;
+        }
     }
     .product-one__inner {
         flex-wrap: wrap-reverse;
@@ -178,7 +185,7 @@
        height: 50px;
     }
     .drop-down__list {
-        left: -90px;
+        // left: 0;
         top: 59px;
     }
     .drop-down__list {
@@ -349,9 +356,9 @@
     .filter__elements-page {
         display: none;
     }
-    .product__block.list .product__desc {
-        height: 270px;
-    }
+    // .product__block.list .product__desc {
+    //     height: 270px;
+    // }
     .create-free__upload {
         padding: 40px;
     }
@@ -361,6 +368,12 @@
     .create-free__img__layer {
         padding-left: 0px;
     }
+    // .drop-down__list { 
+    //     left: 224px;
+    // }
+    // .up-button {
+    //     right: 320px;
+    // }
 
 
 }
@@ -431,6 +444,10 @@
     .weekly__item-money {
         padding: 3px;
     }
+    .product__desc-title {
+        padding: 20px 0;
+    }
+
     
 }
 
@@ -483,6 +500,9 @@
     }
     .weekly__inner-content {
         width: auto;
+    }
+    .product__block.list .product__desc-text {
+        text-align: right;
     }
 }
 
@@ -618,6 +638,13 @@
     .product-one__tabs .tab {
         font-size: 13px;
     }
+    // .drop-down__list {
+    //     left: 124px;
+    // }
+    // .up-button {
+    //     right: 200px;
+    // }
+
 
 }
 
@@ -663,6 +690,20 @@
             width: 130px;  
         }
     }
+    .product__desc-title {
+        padding: 40px 0;
+    }
+    .product__block.list .product__desc-text {
+        text-align: center;
+    }
+    .product__block-img {
+        max-width: none;
+        
+    }
+    .product__block.list .product__block-img {
+        margin-bottom: 30px;
+        margin-top: 0px;
+    }
 
 
 }
@@ -695,6 +736,7 @@
     .blog__search-banner {
         img {
             max-width: 270px;
+            width: 100%;
         }
     }
     .blog__search input {
@@ -736,6 +778,9 @@
     .basket__buttons .checkout {
         width: 130px;
         margin-left: 5px;
+    }
+    .product__block-img{
+        margin-bottom: 20px;
     }
 
 }
@@ -792,6 +837,9 @@
     .user__img {
         display: none;
     }
+    .product__block.list .product__desc-name {
+        padding-bottom: 27px;
+    }
 
 }
 
@@ -829,7 +877,12 @@
     .filter__element {
         height: 65px; 
     }
-
+    .product__desc-circle  {
+        display: none;
+    }
+    .product__desc-theme {
+        padding: 0px;
+    }
 }
 
 
