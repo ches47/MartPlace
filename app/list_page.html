@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Page</title>
+    
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap" rel="stylesheet">
+    
+    <!-- <link rel="stylesheet" href="libs/font-awesome/css/all.css"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+     
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    
+    <!-- Добавляем стили из CDN SLICK-->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+</head>
+<body>
+
+<div class="wrapper">
+   <div class="content">
+<header class="header">
+    <div class="header__top">
+        <div class="container">  
+            <div class="header__top-inner">
+                <div class="header__logo" >
+                    <a href="index.html"><img src="img/MartPlace-logo.png" alt="MartPlaceShop"></a>
+                </div>
+
+                <div class="header__box">
+                    <a href="#" class="header__btn header__btn-login">Стать продавцом</a>
+                    <a class="header__option header__bell header__circle icon-bell" href="#">
+                    <span class="red">25</span>
+                    </a>
+                    <a class="header__option header__message header__circle icon-envelop" href="#">
+                        <span>6</span>
+                    </a>
+                     <a class="header__option header__basket header__circle icon-shopping-basket" href="#">
+                        <span>2</span>
+                    </a>
+                    <div class="header__user">
+                        <div class="header__user-img">
+                            <img src="img/user.png" alt="user_logo">
+                        </div>
+
+                        <div class="header__user-data">
+                            <div class="header__user-name ">
+                                Тофик Хаким
+                            </div>
+
+                            <div class="header__user-bucks ">
+                                $20.45 
+                            </div>
+                    </div>
+                </div>
+                </div>             
+            </div>
+        </div>
+    </div>
+
+    <div class="header__menu">
+        <div class="container">
+            <nav class="menu">
+              <ul class="menu__list">
+                    <li><a href="#">Домашняя</a></li>
+                    <li><a href="#">Все Продукты </a></li>
+                    <li><a href="#">WordPress</a></li>
+                    <li><a href="#">Характеристики</a></li>
+                    <li><a href="#">Cтраницы</a></li>
+                </ul>
+           <div class="header__search ">              
+              <form>
+               <input type="text" placeholder="Поиск товара..." required>
+                <button class="submit icon-search">
+
+                </button>
+            </form>                           
+           </div>               
+            </nav>      
+        </div>
+    </div>
+</header> 
+
+<section class="slider-search">
+    <div class="container">
+        <div class="slider__info">
+            <div class="slider__info-text">
+                <span>4,572</span> WordPress темы, сделанные с любовью
+            </div>
+            <div class="slider__info-search">           
+              <form>
+               <input type="text" placeholder="Поиск вашей продукции" required>
+                <button class="submit">
+                    Поиск
+                </button>
+            </form>                           
+            </div>
+            <div class="slider__info-grid">
+                Домашняя &nbsp;/&nbsp; <span>Сетка страницы категории</span>
+            </div>
+        </div>        
+    </div>
+</section>
+
+<section  class="filter-bar">
+    <div class="container">
+        <div class="filter-product ">
+           <a href="#" class="active">
+            Новые Продукты
+            </a>
+            <a href="#">
+            <span>Популярный Продукты</span>
+            </a>
+       
+
+        <div class="filter__elements">
+           
+            <div class="filter__elements-price filter__element ">
+               Цена: от низ. к выс.
+               <a href="#">
+                   <span class="icon-circle-down"></span>
+                </a>   
+            </div>
+           
+           <div class="filter__elements-page filter__element">
+                12 товаров на странице
+                 <a href="#">
+                    <span class="icon-circle-down"></span>
+                 </a>    
+           </div>
+           
+           <div class="filter__elements-grid ">
+               <a class="" href="#">
+                   <i class="fas fa-th-large"></i>
+               </a>
+               <a class="icon-list2" href="#"></a>
+           </div>
+           
+        </div>
+      </div>
+   
+    </div>
+</section>
+
+<section class="product-page">
+    <div class="container">
+        <div class="product-page__inner">
+            
+            <aside class="product-page__aside">
+               
+                <div class="aside__category aside__item">
+                    <div class="aside__title ">         
+                        Категории
+                    </div>
+                    <ul class="category__list">
+                        <li > <a><i class="icon-circle-right"></i>Wordpress</a>
+                        <span>35</span></li>
+                        <li > <a href="#"><i class="icon-circle-right"></i>Landing Page</a>
+                        <span>11</span></li>
+                        <li > <a href="#"><i class="icon-circle-right"></i>Psd Template</a>
+                        <span>52</span></li>
+                        <li> <a href="#"><i class="icon-circle-right"></i>Plugins</a>
+                        <span>74</span></li>
+                        <li > <a href="#"><i class="icon-circle-right"></i>HTML Template</a>
+                        <span>55</span></li>
+                        <li > <a href="#"><i class="icon-circle-right"></i>Components</a>
+                        <span>87</span></li>
+                        <li > <a href="#"><i class="icon-circle-right"></i>Joomla Template</a>
+                        <span>22</span></li>
+                    </ul>
+                </div>
+                
+                 <div class="aside__filter aside__item">
+                    <div class="aside__title">         
+                        Фильтр товаров
+                    </div>
+                    <ul class="category__list filter__list">
+                        <li><a href="#"><i class="far fa-circle"></i>Trending Products</a></li>
+                        <li><a href="#"><i class="far fa-circle"></i>Popular Products</a>
+                        </li>
+                        <li><a href="#"><i class="far fa-circle"></i>New Products</a>
+                        </li>
+                        <li><a href="#"><i class="far fa-circle"></i>Best Seller</a>
+                        </li>
+                        <li><a href="#"><i class="far fa-circle"></i>Best Rating</a>
+                        </li>
+                        <li><a href="#"><i class="far fa-circle"></i>Low Price</a>
+                        </li>
+                        <li><a href="#"><i class="far fa-circle"></i>High Price</a>
+                        </li>
+                    </ul>
+                </div>
+                       
+                <div class="price-range aside__item">
+                   
+                    <div class="aside__title">        
+                        Price Range
+                    </div>
+                    <form>
+                        <input type="text" class="js-range-slider" name="my_range" value="" /> 
+                        <button type="submit">Искать </button>   
+                    </form>
+                    
+                </div>        
+                        
+            </aside>
+
+            <div class="product-page-content">
+                 
+                  <div class="product-page__items">
+                  
+                  <div class="product__block product-page__block">
+                     <img class="product__block_img" src="" alt="">
+                     <a href="#" class="product__block-img">
+                    </a>
+
+                  <div class="product__desc">
+                    
+                     <div class="product__desc-title">
+                        Finance and Consulting 
+                        Business Theme   
+                     </div>
+                     
+                     <div class="product__desc-name">
+                        <a href="#"><img class="product__desc-circle" src="img/weekly/user-Ellipse.png" alt="circle"></a>
+                         <div class="product__desc-theme">
+                             Coder    
+                         </div>
+                           <div class="product__desc-text">
+                               Nunc placerat mi id nisi inter dum mollis. Praesent phare...
+                               <div class="product__desc-icons">
+                                   <div class="icon-heart"> 90 loves</div>
+                                   <div class="icon-bubble2"> 90 Comments</div>
+                               </div>
+                          </div>
+                     </div>
+                       <div class="product__desc-rating">
+                        <div class="rate-star"></div>
+                        <span class="num">(52)</span>
+                                    <span class="product__desc-basket icon-shopping-basket">427</span>
+                       </div>
+                    
+                    <div class="product__item">
+                       <div class="product__item-themes">
+                            <a href="#" class="product__item-money">
+                                $10
+                                <span>(54)</span>
+                            </a>
+
+                            <a class="product__desc-icon  icon-html-five" href="#">HTML</a>        
+                      </div> 
+                    </div>        
+                        
+                 </div>  
+                 </div> 
+                 
+                 <div class="product__block product-page__block">
+                     <img class="product__block_img" src="" alt="">
+                     <a href="#" class="product__block-img">
+                    </a>
+
+                  <div class="product__desc">
+                    
+                     <div class="product__desc-title">
+                        Finance and Consulting 
+                        Business Theme   
+                     </div>
+                     
+                     <div class="product__desc-name">
+                        <a href="#"><img class="product__desc-circle" src="img/weekly/user-Ellipse.png" alt="circle"></a>
+                         <div class="product__desc-theme">
+                             Coder    
+                         </div>
+                           <div class="product__desc-text">
+                               Nunc placerat mi id nisi inter dum mollis. Praesent phare...
+                               <div class="product__desc-icons">
+                                   <div class="icon-heart"> 90 loves</div>
+                                   <div class="icon-bubble2"> 90 Comments</div>
+                               </div>
+                          </div>
+                     </div>
+                       <div class="product__desc-rating">
+                        <div class="rate-star"></div>
+                        <span class="num">(52)</span>
+                                    <span class="product__desc-basket icon-shopping-basket">427</span>
+                       </div>
+                    
+                    <div class="product__item">
+                       <div class="product__item-themes">
+                            <a href="#" class="product__item-money">
+                                $10
+                                <span>(54)</span>
+                            </a>
+
+                            <a class="product__desc-icon  icon-html-five" href="#">HTML</a>        
+                      </div> 
+                    </div>        
+                        
+                 </div>  
+                 </div> 
+                      
+                      <div class="product__block product-page__block">
+                     <img class="product__block_img" src="" alt="">
+                     <a href="#" class="product__block-img">
+                    </a>
+
+                  <div class="product__desc">
+                    
+                     <div class="product__desc-title">
+                        Finance and Consulting 
+                        Business Theme   
+                     </div>
+                     
+                     <div class="product__desc-name">
+                        <a href="#"><img class="product__desc-circle" src="img/weekly/user-Ellipse.png" alt="circle"></a>
+                         <div class="product__desc-theme">
+                             Coder    
+                         </div>
+                           <div class="product__desc-text">
+                               Nunc placerat mi id nisi inter dum mollis. Praesent phare...
+                               <div class="product__desc-icons">
+                                   <div class="icon-heart"> 90 loves</div>
+                                   <div class="icon-bubble2"> 90 Comments</div>
+                               </div>
+                          </div>
+                     </div>
+                       <div class="product__desc-rating">
+                        <div class="rate-star"></div>
+                        <span class="num">(52)</span>
+                                    <span class="product__desc-basket icon-shopping-basket">427</span>
+                       </div>
+                    
+                    <div class="product__item">
+                       <div class="product__item-themes">
+                            <a href="#" class="product__item-money">
+                                $10
+                                <span>(54)</span>
+                            </a>
+
+                            <a class="product__desc-icon  icon-html-five" href="#">HTML</a>        
+                      </div> 
+                    </div>        
+                        
+                 </div>  
+                 </div> 
+                      
+                      <div class="product__block product-page__block">
+                     <img class="product__block_img" src="" alt="">
+                     <a href="#" class="product__block-img">
+                    </a>
+
+                  <div class="product__desc">
+                    
+                     <div class="product__desc-title">
+                        Finance and Consulting 
+                        Business Theme   
+                     </div>
+                     
+                     <div class="product__desc-name">
+                        <a href="#"><img class="product__desc-circle" src="img/weekly/user-Ellipse.png" alt="circle"></a>
+                         <div class="product__desc-theme">
+                             Coder    
+                         </div>
+                           <div class="product__desc-text">
+                               Nunc placerat mi id nisi inter dum mollis. Praesent phare...
+                               <div class="product__desc-icons">
+                                   <div class="icon-heart"> 90 loves</div>
+                                   <div class="icon-bubble2"> 90 Comments</div>
+                               </div>
+                          </div>
+                     </div>
+                       <div class="product__desc-rating">
+                        <div class="rate-star"></div>
+                        <span class="num">(52)</span>
+                                    <span class="product__desc-basket icon-shopping-basket">427</span>
+                       </div>
+                    
+                    <div class="product__item">
+                       <div class="product__item-themes">
+                            <a href="#" class="product__item-money">
+                                $10
+                                <span>(54)</span>
+                            </a>
+
+                            <a class="product__desc-icon  icon-html-five" href="#">HTML</a>        
+                      </div> 
+                    </div>        
+                        
+                 </div>  
+                 </div> 
+                      
+                      <div class="product__block product-page__block">
+                     <img class="product__block_img" src="" alt="">
+                     <a href="#" class="product__block-img">
+                    </a>
+
+                  <div class="product__desc">
+                    
+                     <div class="product__desc-title">
+                        Finance and Consulting 
+                        Business Theme   
+                     </div>
+                     
+                     <div class="product__desc-name">
+                        <a href="#"><img class="product__desc-circle" src="img/weekly/user-Ellipse.png" alt="circle"></a>
+                         <div class="product__desc-theme">
+                             Coder    
+                         </div>
+                           <div class="product__desc-text">
+                               Nunc placerat mi id nisi inter dum mollis. Praesent phare...
+                               <div class="product__desc-icons">
+                                   <div class="icon-heart"> 90 loves</div>
+                                   <div class="icon-bubble2"> 90 Comments</div>
+                               </div>
+                          </div>
+                     </div>
+                       <div class="product__desc-rating">
+                        <div class="rate-star"></div>
+                        <span class="num">(52)</span>
+                                    <span class="product__desc-basket icon-shopping-basket">427</span>
+                       </div>
+                    
+                    <div class="product__item">
+                       <div class="product__item-themes">
+                            <a href="#" class="product__item-money">
+                                $10
+                                <span>(54)</span>
+                            </a>
+
+                            <a class="product__desc-icon  icon-html-five" href="#">HTML</a>        
+                      </div> 
+                    </div>        
+                        
+                 </div>  
+                 </div> 
+                      
+                      <div class="product__block product-page__block">
+                     <img class="product__block_img" src="" alt="">
+                     <a href="#" class="product__block-img">
+                    </a>
+
+                  <div class="product__desc">
+                    
+                     <div class="product__desc-title">
+                        Finance and Consulting 
+                        Business Theme   
+                     </div>
+                     
+                     <div class="product__desc-name">
+                        <a href="#"><img class="product__desc-circle" src="img/weekly/user-Ellipse.png" alt="circle"></a>
+                         <div class="product__desc-theme">
+                             Coder    
+                         </div>
+                           <div class="product__desc-text">
+                               Nunc placerat mi id nisi inter dum mollis. Praesent phare...
+                               <div class="product__desc-icons">
+                                   <div class="icon-heart"> 90 loves</div>
+                                   <div class="icon-bubble2"> 90 Comments</div>
+                               </div>
+                          </div>
+                     </div>
+                       <div class="product__desc-rating">
+                        <div class="rate-star"></div>
+                        <span class="num">(52)</span>
+                                    <span class="product__desc-basket icon-shopping-basket">427</span>
+                       </div>
+                    
+                    <div class="product__item">
+                       <div class="product__item-themes">
+                            <a href="#" class="product__item-money">
+                                $10
+                                <span>(54)</span>
+                            </a>
+
+                            <a class="product__desc-icon  icon-html-five" href="#">HTML</a>        
+                      </div> 
+                    </div>        
+                        
+                 </div>  
+                 </div> 
+                       
+
+                <!--
+                <div class="product__block">
+                 <img class="product__block_img" src="" alt="">
+                 <a href="#" class="product__block-img">
+                </a>
+
+                <div class="product__desc">
+
+                 <div class="product__desc-title">
+                    Finance and Consulting 
+                    Business Theme   
+                 </div>
+
+                 <div class="product__desc-name">
+                    <a href="#"><img class="product__desc-circle" src="img/weekly/user-Ellipse.png" alt="circle"></a>
+                     <div class="product__desc-theme">
+                         Coder-Lab    
+                     </div>
+
+                 </div>
+                   <div class="product__desc-rating">
+                    <div class="rate-star"></div>      <span class="product__desc-basket icon-shopping-basket">427</span>
+                   </div>
+
+                <div class="product__item">
+                   <div class="product__item-themes">
+                        <a href="#" class="product__item-money">
+                            $10
+                        </a>
+
+                        <a class="product__desc-icon  icon-html-five" href="#">HTML</a>        
+                  </div> 
+                </div>        
+
+                </div>  
+                </div>
+
+                <div class="product__block">
+                 <img class="product__block_img" src="" alt="">
+                 <a href="#" class="product__block-img">
+                </a>
+
+                <div class="product__desc">
+
+                 <div class="product__desc-title">
+                    Finance and Consulting 
+                    Business Theme   
+                 </div>
+
+                 <div class="product__desc-name">
+                    <a href="#"><img class="product__desc-circle" src="img/weekly/user-Ellipse.png" alt="circle"></a>
+                     <div class="product__desc-theme">
+                         Coder-Lab    
+                     </div>
+
+                 </div>
+                   <div class="product__desc-rating">
+                    <div class="rate-star"></div>      <span class="product__desc-basket icon-shopping-basket">427</span>
+                   </div>
+
+                <div class="product__item">
+                   <div class="product__item-themes">
+                        <a href="#" class="product__item-money">
+                            $10
+                        </a>
+
+                        <a class="product__desc-icon  icon-html-five" href="#">HTML</a>        
+                  </div> 
+                </div>        
+
+                </div>  
+                </div>
+
+                <div class="product__block">
+                 <img class="product__block_img" src="" alt="">
+                 <a href="#" class="product__block-img">
+                </a>
+
+                <div class="product__desc">
+
+                 <div class="product__desc-title">
+                    Finance and Consulting 
+                    Business Theme   
+                 </div>
+
+                 <div class="product__desc-name">
+                    <a href="#"><img class="product__desc-circle" src="img/weekly/user-Ellipse.png" alt="circle"></a>
+                     <div class="product__desc-theme">
+                         Coder-Lab    
+                     </div>
+
+                 </div>
+                   <div class="product__desc-rating">
+                    <div class="rate-star"></div>      <span class="product__desc-basket icon-shopping-basket">427</span>
+                   </div>
+
+                <div class="product__item">
+                   <div class="product__item-themes">
+                        <a href="#" class="product__item-money">
+                            $10
+                        </a>
+
+                        <a class="product__desc-icon  icon-html-five" href="#">HTML</a>        
+                  </div> 
+                </div>        
+
+                </div>  
+                </div>
+                -->
+        
+              </div>
+               
+                 <div class="product-page__arrows">
+                     <div class="page__arrows-block">
+                     <button class="icon icon-circle-left" type="submit"></button>
+                     <button type="submit">1</button>
+                     <button type="submit">2</button>
+                     <button type="submit">...</button>
+                     <button type="submit">8</button>
+                     <button class="icon-right icon-circle-right" type="submit"></button>    
+                     </div>
+                 </div>   
+                
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+<section class="join-our">
+    <div class="container">
+        <div class="ready__join">
+            <div class="ready__join-title">
+                Готовы Присоединиться К Marketplace!
+            </div>
+            <div class="ready__join-text">
+                Более 25 000 дизайнеров и разработчиков доверяют MarketPlace.
+            </div>
+            <button class="ready__join-btn">
+               Присоединяйться
+            </button>
+        </div>
+    </div>
+</section>
+    </div>
+
+<footer class="footer">
+   <div class="footer__content">
+    <div class="container">
+    
+     <div class="footer__inner">
+        
+         <div class="footer__col footer__col-adress">
+             <div class="footer__col-logo">
+                 <img src="img/footer/MartPlace.png" alt="MPlace"> 
+             </div>
+             <div class="footer__col-text">
+                 Nunc placerat mi id nisi interdum they mollis. Praesent pharetra, justo ut scel erisque the mattis, leo quam.
+             </div> 
+               <div class="footer__info">
+                   <div class="footer__info-tel icon-phone footer__info-icon">
+                       Телефон: +6789-875-2235
+                   </div>
+                   <div class="footer__info-mail icon-envelop footer__info-icon">
+                       support@aazztech.com
+                   </div>
+                   <div class="footer__info-point icon-location footer__info-icon">
+                       202 New Hampshire Avenue
+                       Northwest #100, New York-2573
+                   </div>
+               </div>
+                
+         </div>
+         <div class="footer__col footer__col-menu">
+             <div class="footer__col-title">
+                 Наша компания
+             </div>
+             <ul class="footer__col-list">
+                 <li><a href="#">О нас</a></li>
+                 <li><a href="#">Как это работает</a></li>
+                 <li><a href="#">Отзывы</a></li>
+                 <li><a href="#">Связаться с нами</a></li>
+                 <li><a href="#">Авторские права</a></li>
+                 <li><a href="#">Блог</a></li>
+                 <li><a href="#">Филиалы</a></li>
+             </ul>
+         </div>
+         <div class="footer__col footer__col-menu">
+             <div class="footer__col-title">
+                 Помощь Поддержка
+             </div>
+             <ul class="footer__col-list">
+                 <li><a href="#"> Форум поддержки</a></li>
+                 <li><a href="#">Условия использования</a></li>
+                 <li><a href="#">Политика поддержки</a></li>
+                 <li><a href="#">Политика возврата</a></li>
+                 <li><a href="#">FAQs</a></li>
+                 <li><a href="#">FAQ покупателей</a></li>
+                 <li><a href="#">FAQ продавцов</a></li>
+             </ul>
+
+         </div>
+         <div class="footer__col footer__col-social">
+            
+             <div class="footer__col-title">
+                Новостная рассылка
+             </div>
+             
+             <div class="footer__col-subscribe">
+                 Subscribe to get the latest news, update and offer information. Don't worry, we won't send spam!
+             </div>
+             
+             <form>
+                 <input type="text" placeholder="Enter email">
+                 <button type="submit">Отправить</button>
+             </form>
+             <ul class="footer__social-link">
+                 <li>
+                    <a class="link-facebook" href="#">
+                     <img src="img/footer/fb.png" alt="">
+                    </a>
+                 </li>
+                 <li>
+                 <a class="link-twitter" href="#">
+                     <img src="img/footer/tw.png" alt="">
+                 </a>
+                 </li>
+                 <li>
+                    <a class="link-foursquare" href="#">
+                        <img src="img/footer/goggle.png" alt=""> 
+                    </a>
+                 </li>
+                 <li>
+                   <a class="link-pin" href="#">
+                       <img src="img/footer/pin.png" alt="">    
+                   </a>
+                </li>
+                 <li>
+                 <a class="link-linkid" href="#">
+                      <img src="img/footer/in.png" alt="">   
+                 </a>
+                 </li>
+                 <li>
+                 <a class="link-svg" href="#">
+                    <img src="img/footer/lo.png" alt=""> 
+                 </a>
+                 </li>
+             </ul>
+             
+         </div> 
+         
+               
+     </div>
+          
+              
+    </div>
+      <div class="footer__copy">
+          <div class="footer__copy-text">
+              ©2020 <span>MartPlace</span>. Все права защищены. Создано <span>AazzTech</span>
+          </div>      
+      </div>   
+  </div>       
+</footer> 
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="js/libs.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
