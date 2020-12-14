@@ -308,8 +308,8 @@
     display: flex;
     position: absolute;
     top: 49px;
-    left: -642px;
-    width: 1130px;
+    left: -210px;
+    width: 530px;
     
     transition: all .3s;
     background-color: #fff;
@@ -359,7 +359,7 @@
 }
 
 .menu__list-mart {
-    width: 440px;
+    width: 240px;
     @include f700;
     li {
         width: 220px;
