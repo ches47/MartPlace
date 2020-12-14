@@ -115,6 +115,12 @@
     .header__search input {
         width: 235px;
     }
+    button.weekly__button-info {
+        left: 74px;
+    }
+    button.weekly__button-demo {
+        right: 130px;
+    }
     
 }
 
@@ -271,8 +277,13 @@
     .product-page__aside {
         display: none;
     }
-
-
+    button.weekly__button-info {
+        left: 100px;
+    }
+    button.weekly__button-demo {
+        right: 94px;
+    }
+    
 
 }
 
@@ -306,6 +317,9 @@
     .filter__elements-page {
         display: none;
     }
+    .weekly__inner-img {
+       display: none;
+    }
 
 }
 
@@ -313,6 +327,7 @@
     .contact-leave__form textarea {
         max-width: 275px;
     }
+    
 }
 
 
@@ -332,6 +347,7 @@
     .weekly__info-text {
         font-size: 14px;
     }
+    
 }
 
 @media (max-width: 750px) { 
@@ -503,6 +519,12 @@
     }
     .product__block.list .product__desc-text {
         text-align: right;
+    }
+    .corporate {
+        margin-top: -57px;
+    }
+    .slider-search {
+        margin-top: -57px;
     }
 }
 
@@ -704,7 +726,9 @@
         margin-bottom: 30px;
         margin-top: 0px;
     }
-
+    button, input, optgroup, select, textarea {
+        font-size: 70%;
+    }
 
 }
 
@@ -752,6 +776,9 @@
     }
     .aside__sale .aside__sale-basket {
         font-size: 13px;
+    }
+    .aside__sale-rating {
+        font-size: 12px;
     }
     .aside__author-social ul li {
        padding-right: 0px;
@@ -882,6 +909,9 @@
     }
     .product__desc-theme {
         padding: 0px;
+    }
+    .aside__sale-rating {
+        padding: 20px 10px;
     }
 }
 

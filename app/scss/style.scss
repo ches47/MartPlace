@@ -1190,31 +1190,31 @@ span.icon-bin {
     height: 105px;
     background-color: #fff;
     position: relative;
-//    &-arrows {
-//        position: absolute;
-//        top: 35px;
-//        right: 30px; 
-//        background-color: $violet;
-//        border-radius: 20px;
-//        width: 75px;
-//        height: 30px;
-//        border: none;
-//        
-//       } 
-//    &-chevron {
-//        color: $light-gray;
-//        font-size: 14px;
-//        position: relative;
-//    }
-//    &-left {
-//        position: absolute;
-//        top: 8px;
-//        left: 16px;   
-//    }
-//    &-right {
-//        position: absolute;
-//        top: 8px;
-//        right: 14px;
+// //    &-arrows {
+// //        position: absolute;
+// //        top: 35px;
+// //        right: 30px; 
+// //        background-color: $violet;
+// //        border-radius: 20px;
+// //        width: 75px;
+// //        height: 30px;
+// //        border: none;
+// //        
+// //       } 
+// //    &-chevron {
+// //        color: $light-gray;
+// //        font-size: 14px;
+// //        position: relative;
+// //    }
+// //    &-left {
+// //        position: absolute;
+// //        top: 8px;
+// //        left: 16px;   
+// //    }
+// //    &-right {
+// //        position: absolute;
+// //        top: 8px;
+// //        right: 14px;
 //    }
 }
 
@@ -1874,7 +1874,7 @@ ul.newest__products-menu.drop-down__list {
     padding: 30px;
     margin-top: -5px;
     width: 350px;
-    height: 330px;
+    height: auto;
     background-color: #fff;
     border-radius: 3px;
 }
@@ -2610,7 +2610,7 @@ footer {
     }
     
      .icon-circle-down {
-            padding-left: 11px; 
+            padding-left: 7px; 
             padding-top: 3px; 
             color: gray;
       }
@@ -2876,22 +2876,6 @@ footer {
             background: $light-blue;
             transition: .5s;
          }
-    }
-    .icon {
-        margin-right: 20px;
-        &:hover {
-            color: #fff;
-            background: $violet;
-            transition: .5s;
-            }
-    }
-    .icon-right {
-        margin-left: 20px;
-        padding-left: 14px;
-        &:hover {
-            color: #fff;
-            background: $violet;
-        }
     }
 }
 
