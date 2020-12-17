@@ -190,21 +190,20 @@
         li {
             display: inline;    
         }
-    li.drop-down__arrow {
-        position: relative;
-        &::after {
-            content: "\f0dd"; 
-            position: absolute;
-            bottom: 1px;
-            right: -11px;
-            font-family: FontAwesome;
-            font-weight: 700;
-            
-        }
-        &:hover {
-            background-color: #0674ec;
-        }
-    }    
+    // li.drop-down__arrow {
+    //     position: relative;
+    //     &::after {
+    //         content: "\f0dd"; 
+    //         position: absolute;
+    //         bottom: 1px;
+    //         right: -11px;
+    //         font-family: FontAwesome;
+    //         font-weight: 700;
+    //     }
+    //     &:hover {
+    //         background-color: #0674ec;
+    //     }
+    // }    
   } 
     
 }
@@ -1582,7 +1581,7 @@ ul.newest__products-menu.drop-down__list {
         margin-right: 10px;
         border-radius: 12px;
         border: none;
-        width: 120px;
+        width: 130px;
         height: 40px;
         margin-bottom: 20px;
         background-color: $light-gray;
