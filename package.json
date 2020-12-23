@@ -24,9 +24,12 @@
     "slick-carousel": "^1.8.1"
   },
   "dependencies": {
+    "clean-css": "^4.2.3",
     "http-proxy": "^1.18.1",
     "ion-rangeslider": "^2.3.1",
     "lodash": "^4.17.20",
+    "lodash.template": "^4.5.0",
+    "minimist": "^1.2.5",
     "object-path": "^0.11.5",
     "yargs-parser": "^20.2.4"
   }
