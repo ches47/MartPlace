@@ -515,10 +515,10 @@
 <section  class="filter-bar">
     <div class="container">
         <div class="filter-product ">
-           <a href="#" class="active">
+           <a class="word" href="#" class="active">
             Новые Продукты
             </a>
-            <a href="#">
+            <a class="word" href="#">
             <span>Популярный Продукты</span>
             </a>
        
@@ -552,15 +552,11 @@
     </div>
 </section>
 
-
-
-
-
 <section class="product-page">
     <div class="container">
         <div class="product-page__inner">
     <aside class="product-page__aside">
-        <div class="category">
+        <div class="category aside__item">
             <div class="aside__title">
                 Categories
             </div>
@@ -574,32 +570,37 @@
                 <li><a href="#">Joomla Template</a><span>54</span></li>
             </ul>
         </div>
-        <div class="filter">
+        <div class="filter aside__item">
             <div class="aside__title">
                 Filter Products
             </div>
             <ul class="filter__list">
-                <li><a href="#"><i class="far fa-circle"></i>Trending Products</a></li>
-                <li><a href="#"><i class="far fa-circle"></i>Popular Products</a>
+                <li><a href="#"></i>Trending Products</a></li>
+                <li><a href="#"></i>Popular Products</a>
                 </li>
-                <li><a href="#"><i class="far fa-circle"></i>New Products</a>
+                <li><a href="#"></i>New Products</a>
                 </li>
-                <li><a href="#"><i class="far fa-circle"></i>Best Seller</a>
+                <li><a href="#"></i>Best Seller</a>
                 </li>
-                <li><a href="#"><i class="far fa-circle"></i>Best Rating</a>
+                <li><a href="#"></i>Best Rating</a>
                 </li>
-                <li><a href="#"><i class="far fa-circle"></i>Low Price</a>
+                <li><a href="#"></i>Low Price</a>
                 </li>
-                <li><a href="#"><i class="far fa-circle"></i>High Price</a>
+                <li><a href="#"></i>High Price</a>
                 </li>
             </ul>
         </div>
-        <div class="price-range">
+        <div class="price-range aside__item">
             <div class="aside__title">
                 Price Range
             </div>
+            <form>
+                <input type="text" class="js-range-slider" name="my_range" value="" />
+                <button type="submit">Найти</button>
+            </form>
         </div> 
-        <div class="top-sellers">
+
+        <div class="top-sellers aside__item">
             <div class="aside__title">
                 Top 10 Sellers
             </div>   
@@ -618,29 +619,12 @@
                         <div class="content__desc-theme">
                             Theme-Valley    
                         </div>
-                        <a class="content__desc-icon  icon-wordpress" href="#">Plugin</a>
                     </div>
                      
                    <div class="content__desc-text">
                         Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque 
                         the mattis, leo quam aliquet congue.   
                    </div> 
-                   
-                   <div class="content__item">
-                      
-                       <a href="#" class="content__item-money">
-                           $20
-                       </a>
-                       <div class="content__item-like icon-heart">
-                           <span>90</span>
-                       </div>
-                       <div class="content__item-busket icon-shopping-basket">
-                           <span>246</span>
-                       </div>
-
-                       
-                   </div>        
-                       
                 </div> 
                   
             </div> 
@@ -783,8 +767,143 @@
                    
             </div>  
             </div> 
+<!--             
+             <div class="product__block product-page__block">
+                <img class="product__block_img" src="" alt="">
+                <a href="#" class="product__block-img">
+               </a>
+
+             <div class="product__desc">
+               
+                <div class="product__desc-title">
+                   Finance and Consulting 
+                   Business Theme   
+                </div>
+                
+                <div class="product__desc-name">
+                   <a href="#"><img class="product__desc-circle" src="img/weekly/user-Ellipse.png" alt="circle"></a>
+                    <div class="product__desc-theme">
+                        Coder    
+                    </div>
+                      <div class="product__desc-text">
+                          Nunc placerat mi id nisi inter dum mollis. Praesent phare...
+                          <div class="product__desc-icons">
+                              <div class="icon-heart"> 90 loves</div>
+                              <div class="icon-bubble2"> 90 Comments</div>
+                          </div>
+                     </div>
+                </div>
+                  <div class="product__desc-rating">
+                   <div class="rate-star"></div>
+                   <span class="num">(52)</span>
+                               <span class="product__desc-basket icon-shopping-basket">427</span>
+                  </div>
+               
+               <div class="product__item">
+                  <div class="product__item-themes">
+                       <a href="#" class="product__item-money">
+                           $10
+                           <span>(54)</span>
+                       </a>
+
+                       <a class="product__desc-icon  icon-html-five" href="#">HTML</a>        
+                 </div> 
+               </div>        
+                   
+            </div>  
+            </div> 
+
+            <div class="product__block product-page__block">
+                <img class="product__block_img" src="" alt="">
+                <a href="#" class="product__block-img">
+               </a>
+
+             <div class="product__desc">
+               
+                <div class="product__desc-title">
+                   Finance and Consulting 
+                   Business Theme   
+                </div>
+                
+                <div class="product__desc-name">
+                   <a href="#"><img class="product__desc-circle" src="img/weekly/user-Ellipse.png" alt="circle"></a>
+                    <div class="product__desc-theme">
+                        Coder    
+                    </div>
+                      <div class="product__desc-text">
+                          Nunc placerat mi id nisi inter dum mollis. Praesent phare...
+                          <div class="product__desc-icons">
+                              <div class="icon-heart"> 90 loves</div>
+                              <div class="icon-bubble2"> 90 Comments</div>
+                          </div>
+                     </div>
+                </div>
+                  <div class="product__desc-rating">
+                   <div class="rate-star"></div>
+                   <span class="num">(52)</span>
+                               <span class="product__desc-basket icon-shopping-basket">427</span>
+                  </div>
+               
+               <div class="product__item">
+                  <div class="product__item-themes">
+                       <a href="#" class="product__item-money">
+                           $10
+                           <span>(54)</span>
+                       </a>
+
+                       <a class="product__desc-icon  icon-html-five" href="#">HTML</a>        
+                 </div> 
+               </div>        
+                   
+            </div>  
+            </div> 
             
-            <!-- <div class="product__block product-page__block">
+            <div class="product__block product-page__block">
+                <img class="product__block_img" src="" alt="">
+                <a href="#" class="product__block-img">
+               </a>
+
+             <div class="product__desc">
+               
+                <div class="product__desc-title">
+                   Finance and Consulting 
+                   Business Theme   
+                </div>
+                
+                <div class="product__desc-name">
+                   <a href="#"><img class="product__desc-circle" src="img/weekly/user-Ellipse.png" alt="circle"></a>
+                    <div class="product__desc-theme">
+                        Coder    
+                    </div>
+                      <div class="product__desc-text">
+                          Nunc placerat mi id nisi inter dum mollis. Praesent phare...
+                          <div class="product__desc-icons">
+                              <div class="icon-heart"> 90 loves</div>
+                              <div class="icon-bubble2"> 90 Comments</div>
+                          </div>
+                     </div>
+                </div>
+                  <div class="product__desc-rating">
+                   <div class="rate-star"></div>
+                   <span class="num">(52)</span>
+                               <span class="product__desc-basket icon-shopping-basket">427</span>
+                  </div>
+               
+               <div class="product__item">
+                  <div class="product__item-themes">
+                       <a href="#" class="product__item-money">
+                           $10
+                           <span>(54)</span>
+                       </a>
+
+                       <a class="product__desc-icon  icon-html-five" href="#">HTML</a>        
+                 </div> 
+               </div>        
+                   
+            </div>  
+            </div>  
+
+            <div class="product__block product-page__block">
                 <img class="product__block_img" src="" alt="">
                 <a href="#" class="product__block-img">
                </a>
@@ -919,16 +1038,17 @@
             </div>  
             </div>  -->
         </div>
+
         <div class="pagination">
             <ul class="pagination__list">
-                <li><a class="active" href="#">1</a></li>
+                <li><span class="active" href="#">1</span></li>
                 <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
+                <li><a href="#">...</a></li>
                 <li><a href="#">4</a></li>
                 <li><a href="#">5</a></li>
-                <li><a href="#">6</a></li>
             </ul>
         </div> 
+
     </div>
   </div> 
  </div>

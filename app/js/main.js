@@ -13,10 +13,6 @@ upButton.onclick = function () {
   window.scrollTo(0, 0);
 };
 
-
-
-
-
 $(function() {
     
   $(".rate-star").rateYo({
