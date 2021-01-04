@@ -8,7 +8,6 @@
         .filter-bar__two {
             display: block;
             margin-bottom: 30px;  
-            width: 94%; 
         }
     }
     .product-page__aside {
@@ -48,6 +47,9 @@
 }
 
 @media (max-width: 1170px) {
+    .product-page__items {
+        margin-left: 0;
+    }
     .footer__inner {
         flex-wrap: wrap;
     }
@@ -130,8 +132,6 @@
     
 }
 
-
-
 @media (max-width: 1140px) { 
     .header__search input {
         width: 235px;
@@ -144,7 +144,6 @@
     }
     
 }
-
 
 @media (max-width: 1110px) { 
     .menu {
@@ -259,6 +258,12 @@
     .buy__block {
         text-align: right;
     }
+    .filter-product a.word {
+        font-size: 15px;    
+    }
+    .filter-product span {
+        padding-left: 20px;
+    }
     .why__choose-text {
         text-align: center;
     }
@@ -280,6 +285,9 @@
     .sell-buy {
         display: none;
     }
+    .filter__elements-page {
+        display: none;
+    }
     .clients {
         flex-wrap: wrap;
         justify-content: center;
@@ -292,16 +300,13 @@
            margin-top: 5px;
         }
     }
-    .filter-bar {
-        height: 165px;
-    }
+
     button.weekly__button-info {
         left: 100px;
     }
     button.weekly__button-demo {
         right: 94px;
     }
-    
 
 }
 
@@ -315,10 +320,10 @@
         margin-bottom: 20px;   
     }
     .product-page__items {
-        margin-left: -2px;   
+        justify-content: center; 
     }
     .product__block.list {
-
+        flex-basis: 100%;
     }           
     .footer__col {
         min-width: 100%;
@@ -345,9 +350,7 @@
         width: 200px;
         left: 400px;
     }
-    .filter__elements-page {
-        display: none;
-    }
+
     .weekly__inner-img {
        display: none;
     }
@@ -412,6 +415,9 @@
     .create-free__img__layer {
         padding-left: 0px;
     }
+    .filter__elements {
+        padding-left: 20px;
+    }
     // .drop-down__list { 
     //     left: 224px;
     // }
@@ -420,6 +426,14 @@
     // }
 
 }
+
+@media (max-width: 700px) { 
+    .filter-product span {
+        padding-left: 10px;
+    }
+
+}
+
 
 @media (max-width: 654px) { 
     .page__arrows-block button {
@@ -704,6 +718,10 @@
     .followers__block {
         padding-right: 0;
     }
+    .filter-product span {
+        padding-left: 0px;
+    }
+    
     .fact__block-number {
         font-size: 27px;
     }
@@ -749,7 +767,7 @@
         
     }
     .product__block.list .product__block-img {
-        margin-bottom: 30px;
+        // margin-bottom: 30px;
         margin-top: 0px;
     }
     button, input, optgroup, select, textarea {
@@ -848,6 +866,10 @@
     .content__desc {
         width: 320px;
     }
+
+    .filter-product a.word {
+    font-size: 13px;
+}
     
     .content__item-star {
         top: 53px;
@@ -858,7 +880,8 @@
         width: 100px;
         padding: 6px 27px;
     }
-    
+
+
     .followers__desc {
         width: 320px;
         height: auto;
